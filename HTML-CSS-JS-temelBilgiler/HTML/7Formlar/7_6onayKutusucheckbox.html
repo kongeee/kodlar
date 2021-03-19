@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Onay kutusu(checkbox)</title>
+    </head>
+
+    <body>
+        <h1>CheckBox</h1>
+
+        <form action="deneme.php" method="GET" name="form1">
+
+
+            <!-- formdaki checkboxların isimleri farklı olmak zorunda -->
+            <!-- php ile bunları alırken if($_GET["onay"]) şeklinde alırız. Onaylıyorum kutucuğu işaretlenmişse bu if true olur ve çalışır, işaretlenmemişse NULL olur ve çalışmaz. -->
+            <input type="checkbox" name="onay">Onaylıyorum. <br>
+            <input type="checkbox" name="eposta">E posta almak istiyorum. <br>
+
+            <input type="submit" value="Yolla">
+            <input type="reset" value="Temizle">
+
+        </form>
+    </body>
+
+</html>

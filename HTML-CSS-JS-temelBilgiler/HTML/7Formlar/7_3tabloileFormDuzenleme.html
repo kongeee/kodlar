@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tablo ile form düzenleme</title>
+    </head>
+
+    <body>
+        <h1>Tablo ile Form Düzenle</h1>
+        <form action="kayit.php" name="kayit" method="GET">
+
+            <!-- Form içinde tablo kullanarak daha hizalı formlar elde edebiliriz -->
+            <table>
+                
+                <tr>
+                    <td>İsim<sup>(*)</sup> :</td>
+                    <td><input type="text" name="isim" required></td>
+                </tr>
+
+                <tr>
+                    <td>E mail<sup>(*)</sup>:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td></td> <!--tdler böyle boş bırakılabilir-->
+                    <td><input type="submit" value="Gönder"> <input type="reset" value="İptal et"></td>
+
+                </tr>
+            </table>
+        
+        </form>
+    </body>
+</html>

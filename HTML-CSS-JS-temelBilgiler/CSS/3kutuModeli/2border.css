@@ -1,0 +1,21 @@
+/* border-style : kenar çizgi tipini belirler(üst sağ alt sol kısımlar için farklı borderstyleverebiliriz)
+   border-width : kenar çizginin kalınlığı(üst sağ alt sol kısımları ayrı ayrı yapabiliriz)
+   border-color : kenar çizginin rengi(4 farklı renk vererek üst sağ alt sol renkler ayrı ayrı yapabiliriz)
+*/
+
+/*! Öncelikle border style belirle sonra width ve color ver yoksa işe yaramaz*/
+
+#ilk{
+
+    border-style: dotted;
+    border-width: 5px; 
+    border-color: red;
+}
+
+
+/*4 tane ayrı ayrı değil de 2 tane yazsaydık 1. üst ve altı, 2.sağ ve solu etkilerdi (hepsi için)*/
+#ikinci{
+    border-style:solid double ridge dotted;
+    border-width: 5px 6px 10px 3px;
+    border-color: green yellow red orange;
+}

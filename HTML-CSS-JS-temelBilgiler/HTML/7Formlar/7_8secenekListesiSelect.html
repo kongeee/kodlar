@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Select option</title>
+    </head>
+    <body>
+
+        <h1>Select Option</h1>
+
+        <form action="xxx.php" name="form2" method="GET">
+            
+            <!-- Bunu php ile alırken $_GET["iller"] değişkenine seçtiğimiz seçenek geliyor -->
+            İl Seç :
+
+            <select name="iller">
+                <!-- Herhangi bir option'a selected yazarsak default olarak o seçili gelir -->
+                <option>İstanbul</option>
+                <option>Ankara</option>
+                <option selected>Adana</option>
+                <option>Antalya</option>
+                <option>Muğla</option>
+            </select>
+
+            <br>
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Sıfırla">
+
+        </form>
+        
+    </body>
+</html>

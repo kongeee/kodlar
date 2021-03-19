@@ -1,0 +1,38 @@
+.ilkSecenek p{ /* classı ilkSenecek olan etiketilerin içindeki p etiket(leri) */
+    color: cornflowerblue;
+}
+
+div>p{ /* Atası div olan tüm p etiketleri */
+    color: crimson;
+    font-style: italic;
+}
+
+.menu ul li{/*menu classının altındaki ul etiketinin içindeki li etiketleri*/
+    color: green;
+}
+
+nav .kirmizi li{ /*nav tagı içinde classı kirmizi olan etiketin içindeki tüm li etiketleri*/
+
+    color: red;
+}
+
+body>p:first-child{/*body tagı altındaki ilk p etiketi*/
+
+    color: purple;
+    font-style: italic;
+
+}
+
+body>p:last-child{
+    color: yellow;
+    font-weight: bolder;
+}
+
+.google:active{ /*?*/
+
+    color: green;
+}
+
+.facebook::after{/*?*/
+    color: red;
+}

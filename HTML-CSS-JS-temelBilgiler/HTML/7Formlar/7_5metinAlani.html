@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Metin alanı</title>
+    </head>
+
+    <body>
+        <h1>Metin alanı (textarea)</h1>
+
+        <form action="kayit.php" method="GET" name="form">
+            İsim : <input type="text" name="isim"> <br>
+
+            <!-- textarea uzun metinlerin girilmesi için vardır, row ve col değerleri verilecek büyüklüğü ayarlanır. Büyültülüp küçültülebilir. sabit kalmasını istiyorsak style'dan resize:none yapılmalıdır -->
+            Şikayetiniz :
+            <textarea name="sikayet"  cols="30" rows="3"></textarea> <br>
+
+            <input type="submit" value="Yolla">
+            <input type="reset" value="Temizle">
+        </form>
+        
+
+        
+        
+    </body>
+</html>

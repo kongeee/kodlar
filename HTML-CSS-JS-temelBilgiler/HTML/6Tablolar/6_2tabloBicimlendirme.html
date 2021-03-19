@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tablo biçimlendirme</title>
+    </head>
+
+    <body>
+        <h1>Tablo Biçimlendirme</h1>
+
+        <!-- caption etiketi ile tabloya isim verilebilir -->
+        <!-- thead etiketi->table head bölümüdür. Sütunların özellikleri burada belirtilebilir -->
+        <!-- tbody etiketi->table body bölümüdür. Tablodaki veriler burada bulunur.-->
+        <!-- tfoot etiketi->table footer bölümüdür. Tablonun en alt satırıdır-->
+
+        <!-- colspan : satırları, rowspan : sütunları birleştirir (th veya td içine yazılır) -->
+
+        <table border="5" style="width: 100%;"> <!-- sayfa boyutuna göre tablo boyutu ayarlanır -->
+            <caption>Şehir Nüfusları</caption>
+            <!-- head bölümü -->
+            <thead>
+                <tr>
+                    <th>Şehir</th>
+                    <th>Nüfus</th>
+                </tr>
+            </thead>
+           
+            <!-- body bölümü -->
+            <tbody>
+                <tr>
+                    <td>Adana</td>
+                    <td>2.22 milyon</td>
+                </tr>
+                <tr>
+                    <td>İstanbul</td>
+                    <td>15.46 milyon</td>
+                </tr>
+
+                <tr>
+                    <td>Ankara</td>
+                    <td>5.5 milyon</td>
+                </tr>
+            </tbody>
+            
+            <!-- footer bölümü -->
+            <tfoot>
+                <tr>
+                    <td colspan="2">Toplam: 23.16 milyon</td> <!-- satır birleştirme -->
+    </body>
+</html>

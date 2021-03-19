@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Seçenek kutusu (radio)</title>
+    </head>
+
+    <body>
+        <h1>Radio</h1>
+
+        <p>İlgilendiğiniz dili seçin :</p>
+        <form action="deneme.php" method="GET" name="form1">
+
+
+            <!-- formdaki radioların isimleri aynı olmalı -->
+            <!-- Birçok seçenek arasından yalnızca bir tanesi seçilebilir -->
+            <!-- php ile alırken $_GET["dil"] c, cpp veya assembly seçeneklerinden birine eşit olacak -->
+            
+            <input type="radio" name="dil" value="c">C <br>
+            <input type="radio" name="dil" value="cpp">C++ <br>
+            <input type="radio" name="dil" value="assembly">Assembly <br>
+            
+            <input type="submit" value="Gönder">
+            <input type="reset" value="İptal Et">
+
+        </form>
+    </body>
+
+</html>

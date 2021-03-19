@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>E mail ve URL</title>
+    </head>
+
+    <body>
+        <h1>email, url</h1>
+        <form action="kayit.php" name="kayit" method="GET">
+            İsim Soyad : <input type="text" name="isimsoyad" required> <br>
+
+            <!-- type="email" yazılırsa girilen inputun email olup olmadığını kontrol eder -->
+            E mail : <input type="email" name="email" required> <br>
+
+            <!-- type="url" yazılırsa girilen inputun url olup olmadığını kontrol eder -->
+            <!-- https://www.site.uzantı şeklinde olup olmadığını kontrol eder (veya http)-->
+            URL : <input type="url" name="baglanti"> <br>
+
+            <!-- sayısal bir değer alacaksak type="number"-->
+            Yaş : <input type="number" name="yas" required> <br>
+
+
+            <input type="submit" value="Gönder">
+            <input type="reset" value="İptal">
+
+        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+/*
+overflow:visible -> varsayılan değerdir. Taşma olan kısım görünür
+
+overflow:hidden -> taşma olan kısım gösterilmez
+
+overflow:scroll -> kutuya sığmazsa içerik gösterilmez ama bir tane scroll konur böylece taşan içerik görüntülenebilir
+
+overflow:auto ->taşma olursa kaydırma çubuğu ile taşan içerik gösterilir
+
+*/
+
+
+div{/*tüm divlere etki etsin*/
+
+    border-style: solid;
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+
+}
+
+#visible{
+    overflow: visible; /* varsayılan */
+}
+
+#hidden{
+    overflow: hidden;
+}
+
+#scroll{
+    overflow: scroll;
+}
+
+#auto{
+    overflow: auto;
+}

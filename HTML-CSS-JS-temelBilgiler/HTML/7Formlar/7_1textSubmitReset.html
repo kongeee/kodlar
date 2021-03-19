@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form oluşturma text, submit, reset</title>
+    </head>
+
+    <body>
+        <h1>text, submit, reset</h1>
+
+        <!-- action : submit butonuna basıldığında verilerin hangi doayaya gönderileceği -->
+        <!-- name : formun adı -->
+        <!-- method : forum yollanma metodu get->açık, post->gizli -->
+        
+        <form action="kayit.php" name="kayit" method="GET">
+            
+            <!-- metin kutusunda maxlength özelliği girilebilecek max uzunluğu belirtir -->
+            <!-- input içinde herhangi bir yere required yazarsak buranın girilmesi zorunlu hale gelir-->
+            <!-- size özelliği ile boyutu ayarlanabilir -->
+            <label for="adsoyad">Ad Soyad:</label>
+             <input type="text" name="adsoyad" maxlength="30" size="10" required> <br> 
+           
+
+            <!-- submit butonu(onay butonu). value içindeki değer butonun üstünde görünür -->
+            <input type="submit" value="Gönder"> 
+
+            <!-- reset butonu(iptal et). -->
+            <input type="reset" value="İptal Et">
+            
+        </form>
+    </body>
+</html>

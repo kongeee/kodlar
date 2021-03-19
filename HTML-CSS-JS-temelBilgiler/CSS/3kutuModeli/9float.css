@@ -1,0 +1,28 @@
+/*kutuları sağa veya sola yazmalamk için kullanılır. Diğer kutular, float ile yaslanan etrafını sararlar*/
+
+/* eğer yer kalmamışsa alt satıra geçip devam ederler */
+#anasayfa{
+    border-style: solid;
+    width: 345px;
+    height: 500px;
+}
+
+.aaa{
+
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin:5px;
+
+}
+
+.disarda{
+
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin:5px;
+
+}

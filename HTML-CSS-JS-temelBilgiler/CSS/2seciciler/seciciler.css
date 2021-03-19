@@ -1,0 +1,35 @@
+h1{ /* h1 etiketleri */
+    color: red; 
+}
+
+#ilk{ /* id'si ilk olan etiket */
+    color: green;
+}
+
+.mavi{/* class'ı mavi olan etiket(ler) */
+    color: blue;
+}
+
+p.pembe{ /* class değeri pembe olan p etiketleri */
+    color: pink;
+}
+
+h2#yuksek{ /*id değeri yuksek olan h2 etiketleri*/
+
+    color:yellow;
+}
+
+p strong{/*p tagı içindeki strong tagları*/
+
+    color: yellowgreen;
+    font-style: italic;
+
+}
+
+h3,h4,h5,h6{/*Tüm h3,h4,h5,h6 etiketleri*/
+
+    color: brown;
+    
+
+}
+

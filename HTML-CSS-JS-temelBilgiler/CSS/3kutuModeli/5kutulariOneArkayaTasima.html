@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Z index ile Kutuları Öne Arkaya Alma</title>
+        <style>
+            /*z-index i büyük olan eleman daha önde görünür*/
+            
+            #buyuk{
+                border-style: solid;
+                height: 250px;
+                width: 150px;
+                background-color: cadetblue;
+
+                z-index: 1;
+            }
+            #kucuk{
+                border-style: solid;
+                height: 100px;
+                width: 50px;
+                background-color: chartreuse;
+
+                position: relative;
+                left: 50px;
+                top: -80px;
+
+                z-index: -1; /* normalde bu üstte görünüyordu ama z index kullanarak büyük kutuyu öne çıkardık*/
+
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div id="buyuk">
+
+        </div>
+       
+        <div id="kucuk">
+
+
+        </div>
+        
+    </body>
+</html>

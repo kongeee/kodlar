@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Link CSS</title>
+
+        <style>
+            /*
+            a:visited -> ziyaret edilmiş link
+            a:link -> ziyaret edilmemiş link
+            a:hover ->fare link üzerinde
+            a:active ->fare tıkladığında
+            */
+            h1{
+                text-align: center;
+            }
+
+            #menu{
+                border-style: solid;
+                background-color:yellowgreen;
+                width: 200px;
+                height: 25px;
+                margin: auto; /*nav etiketini sayfanın ortasına getirir*/
+                text-align: center; /*içeriği ortalar*/
+                padding: 5px;
+                color: black;
+            }
+            
+            a{
+                font-family: sans-serif;
+                font-size: 16px;
+                text-decoration: none;/*altçizgiyi siler*/
+            }
+
+            a:link{/*ziyaret edilmemiş link*/
+                 color: black;
+            }
+            a:visited{/*ziyaret edilmiş linkler*/
+                color: pink;
+            }
+            a:hover{/*üstüne gelince*/
+                color: red;
+                text-decoration: underline;
+            }
+            a:active{/*fare tıkına basınca*/
+                color: royalblue;
+            }
+            
+
+        </style>
+
+        
+    </head> 
+    <body>
+        <h1>Link Özellikleri</h1>
+        <nav id="menu">
+            <a href="#1">Ana Menü</a>  |
+            <a href="#2">Mesaj</a>  |
+            <a href="#3">İletişim</a>  
+
+        </nav>
+        
+        
+        
+    </body>
+</html>

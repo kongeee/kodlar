@@ -1,0 +1,53 @@
+/*
+position:static -> varsayılan kutu özelliğidir. Nereye konuldularsa orada bulunurlar(left, bottom gibi konumlarla hareket etmezler)
+
+poisiton:relative -> kutunun bulunduğu konuma göre taşınmasını sağlar
+
+position:fixed -> kutunun sayfaya göre ayarlanmasını sağlar (sağ altta sabit bir şey olması için böyle bir şey yapabilirsin.Sayfa kaydırılsa bile hep sağ altta olur)
+
+position:absolute -> içteki kutular için kulanılır. (içinde bulunduğu kutuyagöre right bottom left top verilir)
+
+
+
+*/
+
+#kucuk{
+    border-style: solid;
+    height:150px;
+    width:75px;
+    background-color: indianred;
+    
+    position: relative;
+    left: 50px;/* bunları yapmak için positionu relative yaptık*/
+    top: 60px;
+
+}
+
+#buyuk{
+    border-style: solid;
+    height: 200px;
+    width: 100px;
+    background-color: greenyellow;
+    
+    position:fixed; /*sayfa kaydıkça onunla birlikte hareket eder*/
+    bottom:10px;
+    right: 50px;
+    
+}
+
+#ic{
+    border-style: solid;
+    height: 25px;
+    width: 25px;
+    border-color: lightcoral;
+    background-color:darkorchid;
+
+    position: absolute;/*içinde bulunduğu etikete bağlıdır*/
+    left: 30px;
+    top: 50px;
+
+}
+
+#anasayfa{
+    height: 2000px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form özellikleri</title>
+    </head>
+
+    <body>
+        <h1>Form özellikleri</h1>
+
+        <!-- autocomplete="on" yaparsak -> daha önce bu formu doldurduysak o bilgiler tekrar gelir -->
+        <form action="kayit.php" name="kayit" method="GET" autocomplete="on">
+
+           
+            <table>
+                
+                <tr>
+                    <td>İsim<sup>(*)</sup> :</td>
+
+                    <!-- text kutusu için value veirirsek default olarak o değer girilmiş gibi olur-->
+                   
+                    <!-- autofocus dersek input alanına yıklamaya gerek kalmadan sayfa gelir gelmez imleç, input alanından konumlandırılır -->
+
+                    <td><input type="text" name="isim" value="Ekici" required autofocus></td>
+                </tr>
+
+                <tr>
+                    <td>E mail<sup>(*)</sup>:</td>
+                    <!-- placeholder ile input alanına açıklama yazılabilir -->
+                    <td><input type="email" name="email" placeholder="E mail gir" required></td>
+                </tr>
+
+                <tr>
+                    <td></td> 
+                    <td><input type="submit" value="Gönder"> <input type="reset" value="İptal et"></td>
+
+                </tr>
+            </table>
+        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form CSS</title>
+
+        <style>
+            form{
+                border-style: solid;
+                border-radius: 10px;
+                height: 155px;
+                width: 280px;
+                background-color: slategray;
+            }
+
+            input[type="submit"], input[type="reset"]{
+                background-color:greenyellow;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 5px;
+                width: 120px;
+                position: relative;
+                left:15px;
+                color: black;
+
+
+            }
+            input[type="reset"]{
+                background-color: orangered;
+                
+            }
+
+            .soltaraf{
+                font-family: monospace;
+                padding: 5px;
+                
+            }
+            form table tr td textarea{/*form içindeki tablo içindeki tr içindeki td içindeki text areanın resize özelliğni none yap yani genişletilmesin*/
+                resize: none;
+                width: 148px;
+            }
+            input, textarea{
+
+                color: steelblue;
+                font-style: italic;
+                border-radius: 5px;;
+                
+            }
+
+            input:hover, textarea:hover{/*üstlerine gelince*/
+                box-shadow: 5px 3px 5px orange inset;
+            }
+			
+
+            
+           
+        </style>
+
+        
+    </head> 
+    <body>
+		
+        <h1>Form Özellikleri</h1>
+
+        <form action="#" method="GET">
+            <table>
+                <tr><td class="soltaraf">İsim Soyad:</td><td><input type="text"></td></tr>
+                <tr><td class="soltaraf">E mail:</td><td><input type="email"></td></tr>
+                <tr><td class="soltaraf">Mesaj:</td><td><textarea name="" id="" cols="18" rows="4"></textarea></td></tr>
+                <tr><td colspan="2"><input type="submit"><input type="reset"></td></tr>
+
+            </table>
+        </form>
+		
+    </body>
+</html>

@@ -1,0 +1,6 @@
+öncelikle HTML sayfasının head bölümünü hazırlamalıyız(title descripton keyword ...)
+daha sonra html şablonunu oluşturup(semantic etiketlerle bilrikte header nav article aside footer) harici bir css dosyaını bu html sayfasına bağlamalıyız
+Css kodlarını yazmalıyız
+Varsa sayfa içi linklerin oluşturulması ve düzenlenmesi
+borderları kaldır
+en sonunda ise tarayıcılarda siteyi test etmeliyiz

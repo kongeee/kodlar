@@ -1,0 +1,32 @@
+a:link{ /*henüz ziyaret edilmemiş linkler*/
+    color:red;
+}
+
+a:visited{/*tıklanmış linkler*/
+    color: green;
+}
+
+a:focus{/*klavye ile (tab) seçilen linkler*/
+    color: magenta;
+}
+
+a:hover{/*Linklerin üzerine gelindiğinde*/
+
+    color: blue;
+    font-style: italic;
+}
+
+input[type]{ /*type özelliğine sahip olan input etiketleri*/
+
+    background-color: brown;
+
+}
+
+input[type="email"]{ /*type'ı email olan input etiketleri*/
+    background-color: green;
+
+}
+
+input[value~="Gönder"]{/*value özelliğinin değeri Gönder olan input etiketleri*/
+    background-color:navy;
+}

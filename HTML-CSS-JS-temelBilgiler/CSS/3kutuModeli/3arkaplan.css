@@ -1,0 +1,39 @@
+/* backgroung-color -> kutuya arkaplan rengi atar 
+   background-image:url() ->kutuya arkaplan resmi
+   background-size -> resmin boyutunu değiştirebiliriz
+   
+   backgroung-repeat -> arkaplan resminin tekrar özelliği (no-repeat dersek tekrarlanmaz)
+   backgroung-position ->arkapan resminin pozisyonunu ayarlar(right left bottom top center...)
+   background-attachment -> fixed dersek resim sabit, scroll dersek resim hareketli olur
+   
+   
+*/
+
+#ekici{
+    border-style: solid;
+
+    background-color:green;
+}
+
+.furkan{
+    background-image: url(./block-inline.PNG);
+    height: 150px;
+    color: black;
+    background-size: 300px;
+}
+
+#resimdeneme{
+    color: red;
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    background-image: url(./boxmodel.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center; /*top center dersek üste yapışık ortaya gider resim*/
+    background-attachment: scroll;
+
+
+}

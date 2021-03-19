@@ -1,0 +1,23 @@
+h1{
+    border-style: solid; /*Kutunun dış çizgisinin desenini ayarlar (Varsayılan : none)*/
+    width: 150px;/*kutunun genişliğni ayarlar.(Normalde kutu en soldan en sağa gidiyordu (block))*/
+    height: 100px; /*kutunun yüksekliğini ayarlar.(Normalde yğkseklik yazının yüksekliği kadardı)*/
+    padding: 20px;/*içerik ve kenarlık(border) arasındaki boşluğu ayarlar*/
+    margin: 10px;/*kenarlık ile diğer nesneler arasında boşluğu ayarlar*/
+
+    /*padding: 30px 50px; -> üst-alt boşluk 30px, sağ-sol boşluk 50px anlamına gelir*/
+    /*padding: 10px 20px 30px 40px -> sırayla üst sağ alt sol boşluklar*/
+    /*Aynı şey margin için de geçerlidir*/
+
+
+}
+
+#pEtiketi{
+    border-style: solid;
+    display: inline; /*etiketi inline yapar.*/
+}
+
+#aEtiketi{
+    border-style: solid;
+    display: block;/*etiketi block yapar(tüm sayfayı soldan sağa kapsar etiket)*/
+}

@@ -1,0 +1,4 @@
+CSS, tüm HTML etiketlerini bir kutu olarak görür.
+Yani CSS'e göre bir HTML etiketi : içerik, iç-aralık(padding) ve dış aralıktan(margin) oluşmaktadır.
+
+Bazı HTML komutları block bazıları ise inline olarak çalışır. h, p etiketleri block olarak çalışır (Yani sayfanın solundan sağına kadar her yeri kaplar).a, em, img, span gibi etiketler inline oalrak çalışır (Yani sadece oldukları yeri kaplarlar).

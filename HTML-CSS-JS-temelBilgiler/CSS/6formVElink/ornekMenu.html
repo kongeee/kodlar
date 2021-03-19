@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Örnek menü CSS</title>
+
+        <style>
+            ul{
+                list-style-type: none;
+                
+            }
+
+            li{
+                border-style: solid;
+                width: 80px;
+                padding: 4px;
+                float: left;
+                margin: 5px;
+                background-color: black;
+                border-radius: 20px;
+                text-align: center;
+                
+                
+            }
+
+            ul li a{
+                color: gainsboro;
+                text-decoration: none;
+                
+                display: block;/*linke witdh vermek için onu block yap*/
+                width: 75px;
+                
+                
+                
+            }
+            
+            li:hover{
+                background-color: firebrick;
+                box-shadow: 3px 3px 3px darkslategrey;
+            }
+            a:hover{
+                color: yellow;
+            }
+
+            #deneme{
+                border-style: solid;
+                border-radius: 20px;
+                padding: 10px;
+                display: block;
+                position: relative;
+                top: 260px;
+                left: 50px;
+                width: 100px;
+                height: 20px;
+                background-color: red;
+            }           
+
+        
+        </style>
+
+        
+    </head> 
+    <body>
+        
+        <ul>
+            <li><a href="#1">Ana Sayfa</a></li>
+            <li><a href="#2">Projeler</a></li>
+            <li><a href="#3"> Hakkımızda</a></li>
+            <li><a href="#4">İletişim</a></li>
+        </ul>
+        <p></p>
+       <!--Deneme amaçldır-->
+        <a href="#5" id="deneme"></a>
+       
+        
+    </body>
+</html>

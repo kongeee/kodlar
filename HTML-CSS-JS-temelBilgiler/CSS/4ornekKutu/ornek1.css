@@ -1,0 +1,40 @@
+#anaSayfa{
+    border-style: solid;
+    width: 500px;
+    margin: auto; /*kutuya sağdan ve soldan boşluk vererek ortalanmasını sağlar*/
+}
+
+header{
+    border-style: solid;
+    width: 480px;
+    margin: auto;
+    border-color: blue;
+    height: 50px;
+    
+}
+
+nav{
+    border-style: solid;
+    width: 480px;
+    margin:auto;
+    border-color: green;
+    
+
+}
+
+article{
+    border-style: solid;
+    width: 480px;
+    margin:auto;
+    border-color: red;
+    min-height: 100px;/*bu kutu en az 100px olabilir, içerik geldikçe büyür*/
+
+}
+
+footer{
+    border-style: solid;
+    width: 480px;
+    margin:auto;
+    border-color:yellow;
+    height: 25px;
+}

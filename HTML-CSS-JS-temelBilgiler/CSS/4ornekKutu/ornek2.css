@@ -1,0 +1,51 @@
+#ana{
+    border-style: solid;
+    height: 230px;
+    width: 400px;
+}
+
+header{
+    border-style: solid;
+    height: 50px;
+    width: 380px;
+    margin:auto;
+    
+}
+nav{
+    border-style: solid;
+    height: 30px;
+    width: 380px;
+    margin:auto;
+    
+}
+
+article{
+    border-style: solid;
+    min-height: 100px;
+    width: 200px;
+    margin: auto;
+    float: left;
+    position: relative;/*sola tam yapışık oldu, biraz sağa almak için taşıma yapmalıyız bunun için de position telative olmalı*/
+    left: 7px;
+    
+}
+
+aside{
+    border-style: solid;
+    min-height: 100px;
+    width: 180px;
+    margin: auto;
+    float: right;
+    position: relative;
+    right: 7px;
+}
+
+footer{
+    border-style: solid;
+    height: 30px;
+    width: 380px;
+    margin:auto;
+    float: left/*yukarıda floatlar olduğu için bunu yazmamız gerekiyor*/;
+    position: relative;
+    left: 7px;
+}

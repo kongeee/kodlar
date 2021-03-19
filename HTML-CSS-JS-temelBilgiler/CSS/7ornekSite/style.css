@@ -1,0 +1,139 @@
+/*?en başta bunu yaptık ama nedenini bilmiyorum*/
+*{                     
+    margin: 0px;
+    padding: 0px;
+}
+
+/*container (kapsayıcı div etiketi)*/
+#sayfa{
+    border-style: solid;
+    border-width: 1px;
+    width: 900px;
+    min-height: 600px;
+
+    margin: auto;/*sayfanın ortasına al*/
+}
+
+
+/*banner (header etiketi)*/
+#banner{
+    border-style: none;
+    height: 100px;
+    width: 896px;
+    background-color: gainsboro;
+}
+
+/*logo*/
+#logo{
+    border-style: none;
+    height: 50px;
+    width: 70px;
+    background-color: gold;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    float: left;
+}
+/*sosyal medya ikonları*/
+.medya{
+    border-style: none;
+    width: 50px;
+    height: 30px;
+    float: right;
+    position: relative;
+    margin: 5px;
+    background-color: gainsboro;
+
+}
+
+/*ANA MENÜ*/
+#menu{
+    border-style: solid;
+    width: 896px;
+    height: 50px;
+    background-color: goldenrod;
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu ul li{
+    border-style: none;
+    width: 100px;
+    float: left;
+    position: relative;
+    left: 200px;
+    margin: 10px;
+    padding: 3px;
+    background-color: whitesmoke;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+#menu ul  a{
+    font-family: monospace;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#menu ul a:link{
+    color: blue;
+}
+#menu ul a:visited{
+    color: black;
+}
+
+
+#menu ul a:hover{
+    color: forestgreen;
+    text-decoration: underline;
+}
+#menu ul a:active{
+    color: red;
+}
+
+
+/*İÇERİK VE YAN İÇERİK*/
+#icerik{
+    border-style: none;
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+
+#yanicerik{
+    border-style: none;
+    width: 288px;
+    height: 400px;
+    float: right;
+    background-color: khaki;
+}
+
+.resim{
+    float: left;
+    height: 80px;
+    width: 130px;
+    margin: 5px;
+}
+
+/*ALT KISIM*/
+#altkisim{
+    border-style: solid;
+    height: 42px;
+    width: 896px;
+    float: left;
+    background-color: lemonchiffon;
+    text-align: center;
+}
+#altkisim a{
+    font-size: 16px;
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+}
+#altkisim a:hover{
+    color:darkorange;
+    text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Gölge</title>
+        <style>
+            p{
+                /*box-shadow : yatay dikey bulanıklık tümYönler renk inset*/
+                
+                /*
+               
+                inset -> gölgeyi içe düşürür
+                */
+                border-style: solid;
+                height: 50px;
+                width: 150px;
+
+                margin: 50px;
+
+            }
+            #bir{
+                background-color: darkslategray;
+                box-shadow: 10px 10px 20px 5px gold;
+            }
+            #iki{
+                background-color: darksalmon;
+                box-shadow: 40px 5px 30px 3px greenyellow inset ;/*yatayda 40px, dikeyde 5px, bulanıklık 30px, tüm yönelere 3px, greenyellow renginde, içe doğru gölge*/
+
+            }
+        </style>
+        
+    </head>
+    <body>
+
+        <p id="bir"></p>
+        <p id="iki"></p>
+      
+        
+    </body>
+</html>

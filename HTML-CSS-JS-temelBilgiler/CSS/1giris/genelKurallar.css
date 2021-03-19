@@ -1,0 +1,26 @@
+/*? CSS komutları 3 kısımdan oluşur Seçici(h1, p ... gibi), Özellik(color, font-size gibi), Değer(20px, green  gibi) */
+
+/*TODO: Okunabilirliği artırmak için şu şekilde yazılır: */ 
+h1{
+    color: gray;
+    font-size: 20px;
+}
+
+/*TODO: Birden fazla seçici de kullanulabilir */
+h1, p, h2{
+    color: green;
+}
+
+/*TODO: html kodunda id verdiğimiz bir etikete şu şekilde CSS verebiliriz :*/
+#id_degeri{
+    font-style: italic;
+}
+
+/*TODO: html kodunda class verdiğimiz bir etikete şu şekilde CSS verebiliriz :*/
+.class_ismi{
+    color: black;
+}
+
+/*! açıklama metinleri sadece bu şekilde oluyor // işe yaramıyor */
+
+/*? CSS komutları 3 farklı yere yazılabilir, 1-) HTML tagının içine(inline), 2-) Sayfanın head kısmına(internal), 3-) Harici bir dosyaya (external) . Bu üçü de tek bir etiket üzerine uygulanirsa öncelik sırası yukarıda verildiği sıradadır. Yani bir etikete hepsi uygulanırsa inline olan etki eder*/
