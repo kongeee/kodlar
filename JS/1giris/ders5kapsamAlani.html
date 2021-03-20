@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Kapsam alanı JS</title>
+    </head>
+    <body>
+        <p>Kapsam Alanları.(Konsolda)</p>
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+
+            function topla(){
+                var sayi2 = 12;
+
+                console.log(sayi1+sayi2); //dışardaki var değişkenleri fonksiyon içine etki eder
+            }
+
+            var sayi1 = 3;
+            topla();
+
+            console.log(sayi1+sayi2);//fonksiyon içindeki var değişkeni dışarıya etki etmez
+        </script>
+    </body>
+</html>

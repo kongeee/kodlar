@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Değişkenler JS</title>
+    </head>
+    <body>
+        <p>Değiken kullanımı.(Konsolda)</p>
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+
+            /*DEĞİŞKEN TÜRLERİ
+                1- string
+                2- number
+                3- boolean
+                4- null
+                5- undefined
+            */
+            
+            //typeof -> değikenin tipini döndürür (operatördür, fonksiyon değildir typeof degisken şeklinde kullanılır)
+
+            var degisken = "Furkan Ekici";
+            var sayi = 10;
+            var sonuc = false;
+            var bos = null;
+            var furkan;//henüz değer atanmadı onun için undefined ,değer atanmayan değişken oluşturulmaz
+
+            console.log(degisken + " Tipi :" + typeof degisken);// değişkenin tipini öğrendik, + ile birleştirme yapıyoruz PHP de . ile yapıyorduk
+            console.log(sayi + " Tipi :" + typeof sayi);
+            console.log(sonuc + " Tipi :" + typeof sonuc);
+            console.log(bos + " Tipi :" + typeof bos);
+            console.log(furkan + " Tipi :" + typeof furkan);
+
+        </script>
+    </body>
+</html>
