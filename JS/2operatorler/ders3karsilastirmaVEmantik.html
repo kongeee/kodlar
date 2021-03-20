@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Karşılaştırma ve Mantıksal Operatörler JS</title>
+    </head>
+    <body>
+        <p>Karşılaştırma ve Mantıksal Operatörler.(Konsolda)</p>
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+
+           /*
+          
+           ==
+           !=
+           ===  (tip kontrolü de yapar örn string 10 ile sayısal 10 u ayırır)
+           !==
+           <, >, <=, >=
+
+           &&, ||
+
+           ?: ->ternary
+           
+           */
+
+           var sayi = 10;
+           var str = "10";
+           var bos;
+
+           if(sayi==str){
+               console.log("iki eşittir"); //yazılır
+           }
+
+           if(sayi===str){
+               console.log("üç eşittir"); //yazılmaz
+           }
+
+           if(!bos){
+               console.log("Henüz atama yapılmamış değişkenlerin başına if içinde ! koyarsak o if cloğu çalışır");
+           }
+
+           console.log(3==5?"Furkan":"Ekici");//üçlü koşul operatörü (ternary)(soldaki ifade doğryusa birinci kısım yanlışsa ikinci kısım çalışır)
+
+
+           
+        </script>
+    </body>
+</html>
