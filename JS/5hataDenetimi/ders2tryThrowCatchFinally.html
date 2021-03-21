@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>try catch JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+        
+        <script type="text/javascript">
+           
+            //geçen derste 0 a bölme hata oluşturmuyor demiştik. throw kullanarak 0 a bölmeyi hata olarak gösterelim
+            //finally bloğuna yazılan her kod hata olsa da olmasa da çalışır
+            var a = 10;
+            var b = 0;
+
+            try{
+
+                if(b==0){
+                    throw "Sıfıra Bölme";
+                }
+                else{
+                    document.write("Sonuç : ", a/b);
+                }
+
+            }catch(hataMesaj){
+                if(hataMesaj == "Sıfıra Bölme"){
+                    document.write("Sıfıra bölme hatası!!!<br>");
+                }
+                document.write("HATA!! : " + hataMesaj + "<br>");
+
+            }finally{
+                document.write("Finally bloğu her zaman çalışır")
+            }
+
+           
+
+        </script>
+    </body>
+</html>

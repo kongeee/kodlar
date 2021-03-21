@@ -1,0 +1,12 @@
+bitsel operatörler
+mantıksal operatörler(and, or, xor, !, &&(and ile aynı), ||(or ile aynı))
+atama operatörleri (=, .=(birleştirme ataması), +=, -=, /=, *=, %=)
+bitsel atama operatörleri(&=, |=, ^=, <<=, =>>)
+karşılaştırma operatörleri(==, !=, <>(eşit değilse),===(denk ise değişken tip kontrolü yapar), !==(denk değil ise),<,<=,>,>= )
+aritmetik işlem operatörleri(+-*/%)
+artırma ve eksiltme operatörleri(++,--)
+dizi operatörleri(+(birleştir aynı anahtara sahip olanların sonuncusunun değerini alır), ==(eşit ise), !=(eşit değilse), <>, ===, !==)
+özel operatörler(.(birleştirme), ,(virgül C ile aynı), `(çalıştırma operatörü cmd komutlarını çalıştırmak için),\(kaçış operatörü),
+ @(hata denetimi operatörü hatayı yok sayar), new(yeni obje oluşturur), this, instranceof(örneği operatörü değişken o classa mı ait sorusunu sorar),
+?:(c ile aynı), ??(null birleştiricisi operatörü null dönen değerler için), <=>(ilk değer büyükse 1, eşitse 0, küçükse -1 döner))
+işlem önceliği(dıştaki fotoda var)

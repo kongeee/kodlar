@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Ödev1 JS</title>
+    </head>
+    <body>
+        <p>Ödev1.(Konsolda)</p>
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+           /*Hangi günde olduğumuzu ekrana yazdıran program*/
+
+           var day = new Date().getDay();//Date objesi oluşturup getDay metdounu çalıştırdık. 0->pazar, 1-> pazartesi ....
+
+           console.log("Bugün günlerden ",);
+           switch(day){
+               case 0:
+                    console.log("Pazar.");
+                    break;
+               case 1:
+                    console.log("Pazartesi.");
+                    break;
+                case 2:
+                    console.log("Salı.");
+                    break;
+                case 3:
+                    console.log("Çarşamba.");
+                    break;
+                case 4:
+                    console.log("Perşembe.");
+                    break;
+                case 5:
+                    console.log("Cuma.");
+                    break;
+                case 6:
+                    console.log("Cumartesi.");
+                    break;
+                default:
+                    console.log("-----(Geçersiz gün)");
+            
+            
+           }
+
+
+
+           
+        </script>
+    </body>
+</html>

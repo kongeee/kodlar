@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>For döngüsü JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /* nesnelrin veya dizilerin elemanlarına kolay ulaşmak için foreach gibi*/
+            var dizi = new Array("Furkan", "Eren", "Aytekin");//dizi
+            for(anahtar in dizi){
+                document.write(dizi[anahtar]+"<br>");
+            }
+            document.write("----------------<br>");
+            var diller ={dil1:"PHP", dil2:"C", dil3:"JS", dil4:"Assembly"};
+            for(keyy in diller){
+                document.write(diller[keyy]+"<br>");
+            }
+        </script>
+    </body>
+</html>
