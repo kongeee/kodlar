@@ -11,15 +11,17 @@
         <!-- JS kodları -->
 
         <script type="text/javascript">
-            /* nesnelrin veya dizilerin elemanlarına kolay ulaşmak için foreach gibi*/
+            /* nesnelrin veya dizilerin elemanlarına kolay ulaşmak için foreach gibi ama burada in den önce yazdığımız şey dizinin elemanı 
+            yerine geçmiyor index numarası oluyor*/
             var dizi = new Array("Furkan", "Eren", "Aytekin");//dizi
+           
             for(anahtar in dizi){
-                document.write(dizi[anahtar]+"<br>");
+                document.write(dizi[anahtar]+"<br>");//Dizi elemanlarına erişim
             }
             document.write("----------------<br>");
             var diller ={dil1:"PHP", dil2:"C", dil3:"JS", dil4:"Assembly"};
             for(keyy in diller){
-                document.write(diller[keyy]+"<br>");
+                document.write(diller[keyy]+"<br>");//Nesnelere erişim
             }
         </script>
     </body>

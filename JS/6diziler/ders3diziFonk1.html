@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>toString, join, pop, push  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            toString() -> dizinin elemanlarını virgül ile ayırarak yan yana yazar (normalde document.write(dizi) diyince de aynısı oluyor)
+            join() -> diziyi yazdırırken araya virgül yerine başka ayracın gelmesini sağlayabiliriz
+            pop() -> dizinin son elemanını diziden atar. Atılan bu değeri geri döndürür
+            push() -> belirtilen değeri dizinin sonuna ekler. Ekleme sonucunda dizide kaç eleman olduğunu geri dönrürür
+            */
+
+            var dizi = new Array("Furkan", "Eren", 3.14, 47, "Aytekin");
+
+            document.write(dizi.toString()); //diziyi normal yazdırmayla aynı işi yapar 
+            document.write("<br><br>");
+
+            document.write(dizi.join('/')); //buraya "furkan" gibi bir string de yazılabilir. bu değeri geriye döndürür
+            document.write("<br><br>");
+
+            document.write("Pop edilen eleman : "+ dizi.pop() + "<br>"); //dizinin son elemanını atar ve bu elemanı geriye döndürür 
+            document.write(dizi);//görüldüğü gibi son eleman diziden atılmıştır
+            document.write("<br><br>");
+
+            document.write("Pushtan sonra dizideki eleman sayısı : ", dizi.push("Çukurova"), "<br>");
+            document.write(dizi);
+            document.write("<br><br>");
+
+
+
+
+            
+            
+        </script>
+    </body>
+</html>

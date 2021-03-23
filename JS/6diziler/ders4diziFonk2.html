@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>shift, unshift, splice, delete  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            shift() -> dizinin ilk elemanını siler ve diğer tüm elemenaları bir indiz geriye kaydırır (dizinin ilk elemanını döndürür)
+            unshift() -> dizinin balına yeni bir eleman ekelr ve mevcut elemanların indisini bir ileriye kaydırır (ekleme yapılıktan sonraki eleman sayısını dönrürür)
+
+            splice -> yerlerini belirterek yeni elemean ekyebiliriz (değer döndürmüyor), veya splice(x,y) diyerek, x. indisten sonraki y kadar elemanı sil diyebiliriyoruz
+            */
+
+            var dizi = new Array("Furkan", "Eren", 3.14, 47, "Aytekin");
+            document.write("Dizinin ilk hali : ", dizi);
+            document.write("<br><br>");
+
+            document.write("shift kullanılarak dizinin ilk elemanı diziden atıldı :" + dizi.shift() + "<br>"); //dizinin silinen elemanı döndü
+            document.write("Yeni dizi :", dizi);
+            document.write("<br><br>");
+
+            document.write("unshift ile ekleme yaptıktan sonraki eleman sayısı : " + dizi.unshift("Ekicii") + "<br>");
+            document.write("Yeni dizi : ", dizi);
+            document.write("<br><br>");
+
+            dizi.splice(2,0, "Bir", "Adana"); //2. indisten sonra iki elemanı ekle (buradaki 0 eklenen son elemandan sonra sağdaki kaç tane elemanın silineceğidir. 1 yazsaydık adana 'nın sağındaki eleman silinecekti')
+            document.write(dizi);
+
+
+           
+
+
+
+
+            
+            
+        </script>
+    </body>
+</html>
