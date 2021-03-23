@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>eval, isFinite, isNaN  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            eval() -> stringlerden dinamik js değişkenleri elde eder
+            isFinite() -> verilen parametrenin sonlu bir sayı olup olmadğına bakar ("Ekici" diye bir parametre girersek false döner 5 girersek true döner)
+            
+            isNaN() -> verilen parametre bir sayı değilse true döner
+            */
+
+            var a = 1;
+            var b = 16;
+
+            var c = eval("a+b");//a ve b değişken gibi davrandı
+            document.write("Normalde a+b yazması gerekirken : ", c);
+            document.write("<br><br>")
+            //----------------------------------------------------------------------------------------------------//
+
+            document.write("isFinite(5) : ", isFinite(5), "<br>");
+            document.write("isFinite(7/0) : ", isFinite(7/0));
+        </script>
+    </body>
+</html>

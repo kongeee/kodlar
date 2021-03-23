@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Fonksiyon Geçişleri  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            var deger1=function(param1){ //param1 aslında bir fonksiyondur, Fonksiyon içinde fonksiyon kullandık
+                param1(10+20); //deger2 fonksiyonunu 10+20 parametresi ile çalıştırır
+            }
+
+            var deger2=function(param2){
+                document.write(30+param2);
+            }
+
+            deger1(deger2);//deger1 fonksiyonunda param1 yerine deger2 geliyor bu satır sayesinde
+        </script>
+    </body>
+</html>

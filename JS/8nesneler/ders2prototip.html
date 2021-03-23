@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Nesneler prototip JS</title>
+    </head>
+    <body>
+        <p>konsola bak</p>
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+           //nesneye dışarıdan ekstra özellik ekleyebiliriz. console.log da __proto__ kısmında görünür
+
+           function Araba(marka, model, yil){
+               this.marka = marka;
+               this.yil=  yil;
+               this.model = model;
+           }
+
+           Araba.prototype.fiyat = 200000;// sınıfa ek özellik ekleyebiliyoruz
+
+           var arac1 = new Araba("AA", "MODELL", 1997);
+           //arac1.prototype.degisen = true; -> nesneye özellik ekleyemiyoruz
+           console.log(arac1);
+
+        </script>
+    </body>
+</html>

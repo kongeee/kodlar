@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>concat, slice, length, reverse  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            concat() -> iki diziyi birleştirir
+            slice() -> belirtilen indis(ler)den itibaren diziyi ayırır , dizi.slice(1) denirse 1. indisten son indise kadar, dizi.slice(1,3) dersek 1. indisten 3. indise kadar ayırır 3 dahil değil
+            legth -> dizinin uzunluğunu verir
+            reverse() -> dizinin elemanlarını ters çevirir (sondaki başa baştaki sona ...)
+            */
+
+            var dizi1 = new Array("Furkan", "Hakkı");
+            var dizi2 = new Array("Enes", "Mete");
+            var dizi3 = new Array("İbo", "Yasir")
+
+            var isimler = dizi1.concat(dizi2, dizi3);// dizi1 , dizi2 ve dizi3 ile birleştirildi
+            document.write("Yeni dizi(isimler) : ", isimler);
+            document.write("<br><br>");
+
+            var ayrildi = isimler.slice(2,5);
+            document.write("Ayrılmış dizi(2,5) : ", ayrildi);
+            document.write("<br><br>");
+
+            document.write("İsimler dizisinin uzunluğu : ", isimler.length);
+            document.write("<br><br>");
+
+            document.write("Ters çevrilmiş dizi : ", isimler.reverse())
+
+
+
+
+
+           
+
+
+
+
+            
+            
+        </script>
+    </body>
+</html>

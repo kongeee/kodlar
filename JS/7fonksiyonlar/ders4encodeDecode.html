@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>encodeURI, decodeURI  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            encodeURI() -> verilen URL yi encode eder (boşluk yerine %20 gelir, türkçe karakterler yerine başka semboller gelir vb...)
+            decodeURI() -> encode (şifrelenmiş) url yi geri çözer
+            */
+
+            var url = "www.furkanekici.com?ad= erenüğ&soyad=ekic iöğğü";//boşluk ve türkçe karakterler var
+            document.write("Encode edilmiş hali : ",encodeURI(url));
+            document.write("<br>");
+            document.write("Decode edilmiş hali(Orijinal hali) : ", decodeURI(url))
+        </script>
+    </body>
+</html>

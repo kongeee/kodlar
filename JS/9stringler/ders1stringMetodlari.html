@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>String fonksiyonları JS</title>
+    </head>
+    <body>
+       
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            str herhangi bir string olmak üzere,
+
+            length -> metin boyutunu verir >>> str.length
+            indexOf() -> verilen alt metnin ilk olarak bulunduğu yerin başlangıç indisini döner. >>> str.lengthof("subString")
+            lastIndexOf() ->  verilen alt metnin son olarak bulunduğu yerin başlangıç indisini döner >>> str.lasIndexOf("subString"),
+            search() -> indexOf ile aynı. >>> str.search("subString")
+            substr() -> belirlenen karakter den öncesini görmez 2. parametrede belirlenen karakter kadar karakter devam eder döndürür. >>> str.substr(5,9) ilk 5 karakteri es geçer sonrasınadan devam eder 9 karakter daha alır 
+
+            replace() -> herhangi bir alt stringi başka biriyle değiştirmeye yarar >>> str.replace("subString1", "subString2") sadece ilk bulduğunu çevirir.Hepsini çevirmek için RegEx kullanmak gerek.(Bu değişiklik str stringini etkilemez)
+
+            toLowerCase() -> stringin tüm harflerini küçük harf yapar >>> str.toLowerCase()
+            toUpperCase() -> stringin tüm harflerini büyük harf yapar >>> str.toUpperCase()
+            concat() -> stringkeri birleştirir >>> str.concat(str2, str3, ....)
+            split() -> metni belirtilen yerlerden böler, bölünen değerler diziye dönüşür. >>> var dizi = str.split("-") eksi gördüğün yerden böl ve dizi değişkenine aktar
+
+            */
+
+            var metin = "Merhaba Ben Furkan Ekici";
+            var dizi = [];
+
+            dizi = metin.split(" ");//boşluk gördüğün yerden böl ve dizi değişkenine aktar
+            document.write(dizi);
+
+            
+            
+            
+           
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Recursive  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            
+            function faktoriyel(sayi){
+                if(sayi == 0 || sayi == 1){
+                    return 1;
+                }
+                return sayi * faktoriyel(sayi-1);
+            }
+
+            document.write(faktoriyel(5));
+        </script>
+    </body>
+</html>

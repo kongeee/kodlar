@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Nesneler  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+           /*buradaki nesne yapısı pythondaki sözlüğe benziyor, mantığı ise OOP'ye benziyor, direkt tanımnalanabildiği gibi bir fonksiyon sayesinde veya Object() sınıfı ile tanımlanabiliyor . Ayrıca nesneler için metodlar tanımlanabilir*/
+
+           /*Nesnelerden dizi de oluşturabiliriz var nesne = [
+               {
+                   ozellikler
+               },
+
+               {
+                   ozellikler
+               }
+
+           ]*/
+
+           var direktNesne = {
+               isim:"Furkan",
+               soyad:"Ekici",
+               yil:1997,
+               bolum:"Bilgisayar Mühendisliği",
+               isimOgren: function(){
+                   return this.isim;//mevcut nesnenin isim bilgisini dönder
+               },
+               yasOgren: function(){
+                   return (2021-this.yil);
+               }
+           }
+
+           console.log("\n\nDirekt nesne oluşturme : ");
+           console.log(direktNesne); // nokta kullanarak elemanlarına da erişebiliriz
+           
+           document.write("Nesnein isim bilgisi ve yaş bilgisi : ", direktNesne.isimOgren()," ",direktNesne.yasOgren()); //direktNesne.isim de yazabilirdik
+           document.write("<br>(Console a bak !!!!)");
+
+           //---------------------------------------------------------------------------------------------///
+
+           function Araba(marka, model, yil, km){
+               this.markasi = marka;
+               this.modeli = model;
+               this.yili = yil;
+               this.kmsi = km;
+           }
+
+           var araba1 = new Araba("Reno", "Symbol", "2008", "275000");
+           var araba2 = new Araba("Ford", "Fusion", "2006", "244000");
+
+           console.log("\n\nFonksiyon ile nesne oluşturma : ");
+           console.log(araba1);
+           console.log(araba2);
+           
+           //------------------------------------------------------------------------------------------------------//
+
+           var bilgisayar1 = new Object();
+
+           bilgisayar1.ram = "4096 MB";
+           bilgisayar1.islemci = "i5 7300hq";
+           bilgisayar1.ekran_karti = "1050ti";
+
+           console.log("\n\nObject ile nesne oluşturma : ");
+           console.log(bilgisayar1);
+
+           
+        </script>
+    </body>
+</html>

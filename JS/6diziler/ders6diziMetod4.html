@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>sort, indexOf, some  JS</title>
+    </head>
+    <body>
+        
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            sort() -> ascii karakterlerine göre sıralama yapar, (dizide 10 ve 8 varsa 10 8 den önce gelir, 1 ile bgaşladığı için)
+            indexOf() -> aldığı elemanın index numarasını döndürür
+            some() -> belli koşula uyan eleman varsa true, yoksa false döner parametre olarak fonksiyon alır
+            
+            */
+
+            dizi = new Array("Furkan", 3, 5, "Ekici", 10);
+            document.write("Orijinal dizi : ", dizi, "<br>");
+            document.write("Sıralanmış dizi(ascii sıralaması natural sort değil) : ",dizi.sort());
+            document.write("<br><br>");
+
+            document.write("Furkan'ın index numarası : ", dizi.indexOf("Furkan"));
+            document.write("<br><br>");
+
+            //-----------------------------------------------------------------------------------------------//
+            var yaslar = [1, 5, 18, 29, 4, 11];
+
+            document.write("Yaşlar : ", yaslar);
+            document.write("<br>");
+
+            function kontrol(parametreler){
+                return parametreler >= 18;//
+            }
+
+            if(yaslar.some(kontrol)){//eğer kontrol fonkyionundan erhangi bir değer true döenrse yani dizide 18 den büyük eşit değer varsa
+                document.write("Dizide 18 den büyük dğer var");
+
+            }
+
+
+
+        
+            
+            
+        </script>
+    </body>
+</html>
