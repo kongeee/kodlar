@@ -1,0 +1,5 @@
+Kriptoloji : şifreleme, gönderilen mesajların güvenliği sağlayan, gönderici ve alıcı arasına 3. kişilerin girmesini engellemeye çalışan ve iletilerin güvenliğini sağlayan bilim dalıdır.
+
+Kriptografi : Mesajın şifrelenmesi.
+Kriptoanaliz : Şifreli mesajın şifresinin çözülmesi veya analiz etme(kırmaya çalışma).
+

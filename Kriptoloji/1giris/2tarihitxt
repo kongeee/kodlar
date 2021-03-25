@@ -1,0 +1,21 @@
+Tarihte bilinen ilk kriptolog 4000 yıl önce yaşamış Mısırlı bir katiptir. Efendisinin hayatını anlatırken daha önce hiç kullanılmamış hiyeroglifler kullanmıştır.
+
+Milattan önce 590 yılında Jeremiah kitabında 'Atbash Şifreleme' yönteminden bahsetmiştir.
+
+Askeri alanda ilk kriptograflar Spartalılardır.
+
+Artha Shastra adlı eserde ilk defa şifre kırma tekniklerinden bahsedilmiştir.
+
+Kriptoanaliz alanında ilk ciddi araştırma MS 600 yıllarında Araplar tarafından yapılmıştır.
+
+9. yüzyılda Bağdat'ta yaşayan El Kindi frekans analizini bulan kişidir.
+
+İtalyan kriptocu Leon Battista Albert, iç içe iki diskten oluşan şifreleme cihazı geliştirmiştir.
+
+1586 yılında Vigenere şifreleme ile ilgili bir kitap yazmıştır. Bu kitap günümüzde de geçerliliğini korumaktadır.
+
+1861 yılında çok alfabeli şifrelerde tekrar eden grupları kullanarak gerçekleşen şifre kırma yöntemini duyurdu.
+
+1883 yılında Kerckhoff kriptoloji ile ilgili şu temelleri ortaya koydu
+    ->Bir şifrenin güvenliği kolayca değiştirilemeyen bir şeye dayanmamalıdır.
+    ->Rakip hafife alınmamalı. Rakibin de şifreleme ve şifre çözme yöntemlerini bildiği unutulmamalı. Bu yüzden şifreleme sisteminin gücü anahtarı gizli tutmya dayanmalıdır, şifreleme yöntemini değil.
