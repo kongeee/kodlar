@@ -1,0 +1,5 @@
+Simetrik şifrelemede şifreleme işlemi bir anahtar yardımı ile yapılır. Bu anahtarı iki tarafta önceden bilir. Bir tarafın anahtarla şifrelediği metni diğer taraf aynı anahtarla açabilir.(Yapılan işlem siemtriktir. Bu yüzden simetrik deniyor zaten)
+
+Burada sorun anahtarın 3. kişinin eline geçmesidir. Böyle bir durumda verinin güvenliği tehlikeye girer. Bu sorunu çözmek için 2 yol vardır.
+1.) Anahtar değiştirme algoritmaları.(İleride bahsedielecek)
+2.)Şifreleme yönteminin iletişim için değil kişisel bilgilerin güvenliği için kullaılması. Örneğin x kişisi kendi bilgilerini simetrik şifreleme yöntemlerinden biriyle şifreleyip kendi bilgisayarında tutsun. Bu bilgilere ulaşmak için bu şifreli metni aynı anahtarla çözer. Bu durumda anahtar tek kişide olacağından güvenlik artırılmış olur.

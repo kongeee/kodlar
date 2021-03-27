@@ -1,0 +1,12 @@
+Uydu haberleşmelerinde, TV yayınlarında, devletler arası iletişimde, askeri alanda, bankacılık sistemlerinde, web sayfalarına erişimde, e-maillerde... 
+
+Bilgisayar güvenliği gerçek hayattaki güvenlikle benzer özellikler gösterir. Üç temel fonksiyon var : 
+
+1-)Engelleme : Gerçek hayattaki; kapıya kilit takma, dükkana kepenk takma, arabaya alarm yapmak ...
+               Bilgisayarda ; şifreleme metodları kullanmak
+
+2-)Tespit : Gerçek hayattaki; güvenlik kamerası kullanmak
+            Bilgisayarda ; Saldırı tespit sistemleri (intrusion detection systems) veya firewall kullanmak
+
+3-)Tedbir : Saldırı esnasında yapılacakları kapsar. Gerçek hayattaki ; polise gitmek
+            Bilgisayarda ; bazı portları kapatmak vey IP leri engellemek.

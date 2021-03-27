@@ -1,0 +1,7 @@
+Kullanım amaçlarını 4 ana başlıkta inceleyebiliriz :
+1-) Gizlilik : 2 sistem veya kişi arasındaki iletişimin 3. kişilerce bilinememesi.
+2-) Bütünlük : Mesajın tam bir şekilde hiçbir ekleme veya çıkarma olmadan karşı tarafa teslim edilmesi.
+3-) Kimlik denetimi : Her iki tarafın da kimliği doğrulanmalıdır. İki taraftın da bu iletişime katıldıkları ispatlanabilir olmalı.
+4-) İnkar edememe : İletişi gerçeklerştiren tarafların bu iletişime katıldıklarını inkar edememesi gerekir.(3. ile benzer)
+
+! Korunan bilgi ve koruma metodunun sevilerinin uygun olması gerekir. Gereğinden fazla güvenlik önlemi almak sistemin performansını azaltacağı gibi düşük güvenlik önlemi ise bilginin 3. kişiler tarafından erişilmesini kolaylarştırır 

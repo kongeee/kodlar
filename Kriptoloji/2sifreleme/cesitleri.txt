@@ -1,0 +1,22 @@
+Şifreleme yöntemleri kendi içlerinde 2 ana türden oluşur. Siemtrik ve Asimetrik şifreleme. Simetrik şifrelemede şifreleme ve şireyi çözme için kullanılan ahatar aynı iken (ev anahtarı gibi düşün), asimetrik şifrelemede şifreleme ve şifre çözme için kullanılan anahtar farklıdır.
+
+Şifreleme açısından bir diğer sınıflandırma da dizi ve blok şifrelemedir. Dizi şifrelemede metnin her biti şifrelenirkeni blok şifrelemede n bitlik bloklar oluşturularak şifreleme gerçekleştirilir. Dizi şifrelemede metnin her biti anahtar değer ile xor işlemine girer ve böylece şifreli metin oluşur. Şifre çözülürken, şifreli metin aynı anahtarla tekrar xor işlemine sokulur.
+
+
+XOR 
+
+X Y   Z
+
+0 0   0
+0 1   1
+1 0   1
+1 1   0
+
+Düz metnin bitleri      : 1011 1100
+Anahtar                 : 1100 0111
+Şifreli metin           : 0111 1111
+
+
+Şifreli metin           : 0111 1111
+Anahtar                 : 1100 0111
+Şifresi çözülen metin   : 1011 1000 (yukarıdaki düz metin ile aynıdır)

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Date nesnesi JS</title>
+    </head>
+    <body>
+       
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            Bunun için bir nesne oluşturmalıyız (var tarih = new Date())
+
+            //bunların hepsinin başında tarih. var
+
+            getDate() -> ayın gününü döndürür
+            getDay() -> 0->pzr, 1->pzrts olacak şekilde günü dönrürür
+            getMonth() -> 0->Ocak, 1->Şubat ....
+            getFullYear() -> bulunduğumuz yılı gösterir
+            getHours() -> saati dönrür
+            getMinutes() -> dakikayı döndürür
+
+            setDate(), setFullYear(), setMonth(), setHours(), setMinutes() gibi metodlar da bu özelikleri set etmeye yarar
+            
+            */
+
+            
+            var tarih = new Date();
+
+            document.write("Şu anki yıl (getFullYear ile) : ", tarih.getFullYear(), "<br>");
+
+            tarih.setFullYear(2222);
+
+            document.write("setFullYear kullanılarak değiştirilen tarih : ", tarih.getFullYear());
+
+           
+            
+            
+           
+
+        </script>
+    </body>
+</html>
