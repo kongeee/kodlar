@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>DOM CSS ayarlama JS</title>
+    </head>
+    <body>
+       
+        <p id="isim">Furkan Ekici</p>
+        <br>
+
+        <button onclick="cssVer()">CSS ver</button>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            .style.property ile JS kullanarak etiketlere CSS verebiliriz
+
+            */
+
+            function cssVer(){
+                document.getElementById("isim").style.color = "red"; //rengini kırmızı yap
+                document.getElementById("isim").style.fontSize="20px"; //yazı boyutunu 20 yap
+                document.getElementById("isim").style.backgroundColor="green"; //arkaplan rengini yeşil yap
+                document.getElementById("isim").style.display="inline"; // kutu tüm sayfayı kaplamasın
+            }
+
+
+        </script>
+    </body>
+</html>

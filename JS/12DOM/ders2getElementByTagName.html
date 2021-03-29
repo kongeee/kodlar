@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>getElementByTagName JS</title>
+    </head>
+    <body>
+       
+        <p>Birinci paragraf</p>
+        <p>İkinci paragraf</p>
+        <p>Üçüncü paragraf</p>
+
+        <button onclick="degis()">Yazıları değiştir</button>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            document.getElementByTagName("tagIsmi") sayesinde html dökümanındaki tagİsmi isimli tğm etiketlere ulaşabiliriz. Yani tüm bu etiketleri dizi şeklinde kabul eder.
+
+            */
+
+            //kaç tane p etiketi olduğunu öğrenmek için
+            console.log(document.getElementsByTagName("p").length + " tane p etiekti vardır.");
+
+            function degis(){
+                var uzunluk = document.getElementsByTagName("p").length;//kaç tane p elemanı olduğunu bulduk
+                for(var i=0; i<uzunluk; i++){
+                    document.getElementsByTagName("p")[i].innerHTML = i + ". eleman"; //bir dizi elemanı gibi de ulaşabiliyoruz
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

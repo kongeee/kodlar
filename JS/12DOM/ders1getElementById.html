@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>getElementById JS</title>
+
+
+        <!-- CSS kodları -->
+        <style type="text/css">
+
+            #yazi{
+
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <p id="metin">Orijinal Metin</p>
+
+        <input id="adgir" type="text" placeholder="Adınızı giriniz">
+        <br><br>
+        <input id="sec" type="checkbox"> Seçimini yap
+
+        <br><br>
+
+        <button id="islem" onclick="fonskiyonCalistir()">Değiştir</button>
+        <br>
+        <p class="deneme">Deneme paragrafı</p>
+        <h1 class="deneme">Deneme başlık</h1>
+
+        <br><br>
+        <!-- Aşağıda JS kodunu onclik içine yazdık deneme sınıfına ait 0. elemeanın içeriğini değiştirdik -->
+        <button onclick="document.getElementsByClassName('deneme')[0].innerHTML='Furkan Ekici';">Class özelliği için tıkla</button>
+       
+
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /* 
+                document.getElementById("HtmlID") metodu ile id si HtmlID olan html elemanının JS ile düzenlenmesini sağlar
+                document.getElementByClassName("HtmlClass") metodu da Id ile benzer işi yapar. bu classa ait tüm etiketler dizi şekilde tutulur
+                
+                innerHTML metodunu bir değişkene de atayabiliriz ÖRN:
+                var degisken = document.getElementById("metin").innerHTML; //böylece degisken isimli değişken metin id sine sahip html etiketinin içeriğini tutuyor.
+
+            */
+
+            function fonskiyonCalistir(){
+
+                document.getElementById("metin").innerHTML="Sonradan gelen metin"; // html içeriğini değiştirir
+                document.getElementById("metin").id = "yazi"; //html etiketinin id sini değiştirir
+
+                document.getElementById("adgir").placeholder = "Soyad gir"; // input alanının placeholder özelliğini değiştirir
+
+                document.getElementById("sec").checked = true; //checkbox ' ı otomatik oalrak işaretler (false yazsaydık işaretli olsa işareti kaldırırdı)
+
+            }
+
+
+        </script>
+    </body>
+</html>

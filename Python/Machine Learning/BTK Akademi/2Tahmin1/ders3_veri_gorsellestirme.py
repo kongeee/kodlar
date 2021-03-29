@@ -69,3 +69,5 @@ plt.ylabel("Fiyatlar") #y ekseni ismi
 
 
 
+
+
