@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Etiketler için özellik ayarları JS</title>
+    </head>
+    <body>
+       
+        <a id="link">Bu çalışmayan bir linktir</a>
+        <br><br>
+        <button onclick="linkVer()">Linki etkinleştir</button>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            .setAttribute("ozellik", "parametre") -> elemeana yeni özelllik ekler
+            .attributes -> var olan özellikleri gösterir
+            .hasAttribute("ozellik") -> etiket o özelliğe sahipse ture, değilse false döner
+
+            */
+
+            function linkVer(){
+               
+                document.getElementById("link").setAttribute("href", "https://www.google.com"); //özelliklik ekle
+                document.getElementById("link").innerHTML = "Google ->Konsola bak";
+
+                var ozellikler = document.getElementById("link").attributes;//özellikleri listele
+                console.log("Özellikler : ",ozellikler);
+
+                var a = document.getElementById("link").hasAttribute("target"); //target özelliğine sahip mi ??
+                console.log("Target özelliği var mı ? :"+a);
+
+                document.getElementById("link").setAttribute("target","_blank"); //target _lank linki yeni sayfada açar
+                console.log("Target özellii eklendi");
+
+                var a = document.getElementById("link").hasAttribute("target"); //target özelliğine sahip mi ??
+                console.log("Target özelliği var mı ? :"+a);
+            }
+        </script>
+    </body>
+</html>

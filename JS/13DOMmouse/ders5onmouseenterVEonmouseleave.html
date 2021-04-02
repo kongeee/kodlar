@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>onmouseenterVEonmouseleave JS</title>
+    </head>
+    <body>
+       
+        <button onmouseenter="uzerinde()">Üzerine gel!</button>
+        <button onmouseleave="ayrildi()">Üzerinden ayrılınca çalışır!!!</button>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            onmouseenter -> onclick in üstüne gelince çalışan hali(tıklama olmadan)
+            onmouseleave -> üzerinden ayrılınca çalışır
+            */
+           
+            function uzerinde(){
+                alert("Üzerine geldin!!!");
+            }
+            function ayrildi(){
+                alert("Üzerinden ayrıldın!!!")
+            }
+        </script>
+    </body>
+</html>

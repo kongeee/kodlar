@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>onmousemove JS</title>
+        <style type="text/css">
+            div{
+                border-style: solid;
+                
+                height: 100px;
+                width: 150px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div onmousemove="hareket()">Bu alanda mouse hareket ettikçe JS fonksiyonu çalıaşcak(Her harekette)</div>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+                onmousemove -> üzerinde hareket edildikçe fonksiyonu çalıştırır (çok hassas)
+            
+            */
+           
+            function hareket(){
+                let etiket = document.createElement("p");
+                etiket.innerHTML = "Yeni paragraf";
+                document.body.appendChild(etiket);
+                
+
+            }
+        </script>
+    </body>
+</html>

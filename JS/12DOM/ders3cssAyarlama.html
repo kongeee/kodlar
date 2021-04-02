@@ -18,13 +18,16 @@
             
             .style.property ile JS kullanarak etiketlere CSS verebiliriz
 
+            document.querySelector("seçici_adı").style.property = ... -> seçici adı = h1, p, .deneme, #isim, .furkan:hover gibi
+
             */
 
             function cssVer(){
                 document.getElementById("isim").style.color = "red"; //rengini kırmızı yap
                 document.getElementById("isim").style.fontSize="20px"; //yazı boyutunu 20 yap
-                document.getElementById("isim").style.backgroundColor="green"; //arkaplan rengini yeşil yap
                 document.getElementById("isim").style.display="inline"; // kutu tüm sayfayı kaplamasın
+
+                document.querySelector("#isim").style.backgroundColor = "green";//arkaplan rengini yeşil yap
             }
 
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>confirm JS</title>
+    </head>
+    <body>
+       
+        <button onclick="onayla()">Onaylamak için tıkla</button>
+        <p id="uyari"></p>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+                confirm("metin") -> yukarıda bir onay metni gösterir evet dersen true hayır dersen false döner
+            */
+           function baslikDegistir(etiket){
+               etiket.innerHTML = "Bu Değiştirilmiş Başlık";
+           }
+
+           function onayla(){
+                let deger = confirm("Bu mesajı onaylıyor musun ?");//evete basılırsa true dönecek
+
+                if(deger){
+                    document.getElementById("uyari").innerHTML = "Onaylandı";
+                }
+                else{
+                    document.getElementById("uyari").innerHTML = "Onaylanmadı";
+                }
+           }
+            
+            
+        </script>
+    </body>
+</html>

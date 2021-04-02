@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Etiket ekleme silme değiştirme JS</title>
+    </head>
+    <body>
+       
+        <ul id="udemy">
+            <li>Furkan</li>
+            <li>Büşra</li>
+            <li>Eren</li>
+        </ul>
+        
+        <button onclick="ekle()">Ekle</button>
+        <button onclick="sil()">Sil</button>
+        <button onclick="degistir()">Baştakini değiştir</button>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            eleman.removeChild(eleman.childNodes[index]) -> alt elemanları siler
+
+            */
+
+            function ekle(){
+               
+                var yeni = document.createElement("li");
+                yeni.innerHTML = "Eleman";
+
+                document.getElementById("udemy").appendChild(yeni);
+
+            }
+
+            function sil(){
+                let liste = document.getElementById("udemy");
+                liste.removeChild(liste.childNodes[0]); //en baştaki elemanı siler (sonraki eleman 0. indexe yerleşir)
+            }
+
+            function degistir(){
+                var eleman = document.createTextNode("Ekici"); //eklenecek eleman
+                var indis = document.getElementById("udemy").childNodes[0]; // değişecek node
+
+                indis.replaceChild(eleman, indis.childNodes[0]);
+
+                
+            }
+        </script>
+    </body>
+</html>

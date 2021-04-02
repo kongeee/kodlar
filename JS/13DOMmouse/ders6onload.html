@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>onload JS</title>
+    </head>
+    <body onload="yuklendi()">
+       
+        <p>İçerik</p>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            onload -> tüm body alanı yüklendikten sonra çalışır (body etiketine yaz),  bodynin tamamen yüklendiktenn sonra bazı js kodlarının çalışmasını isteyebiliriz o zaman bunu kullanıyoruz
+            */
+           
+            function yuklendi(){
+                alert("Tüm body içeriği yüklendi!");
+            }
+        </script>
+    </body>
+</html>

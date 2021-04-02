@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Onclick JS</title>
+    </head>
+    <body>
+       
+        <h1 onclick="baslikDegistir(this)">Bu Orijinal Başlık(değiştirmek için üstüne tıkla)</h1> <!--Buradaki this h1 etiketini ifade ediyor-->
+        
+        İsim :<input id="isim" type="text" placeholder="isim">
+        <button onclick="yaz()">İsmi ekrana yaz</button>
+        <p id="goster"></p>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            onclick olayı ile mevcut elemena tıklandığında bir fonksiyonu çalıştırırız
+
+            .value ile inputtan gelen değeri alabiliriz
+
+            */
+           function baslikDegistir(etiket){
+               etiket.innerHTML = "Bu Değiştirilmiş Başlık";
+           }
+
+           function yaz(){
+                let degisken = document.getElementById("isim").value;
+                document.getElementById("goster").innerHTML = degisken;
+           }
+            
+            
+        </script>
+    </body>
+</html>

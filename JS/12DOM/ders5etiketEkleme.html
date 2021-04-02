@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Etiket ekleme JS</title>
+    </head>
+    <body>
+       
+        
+        <button onclick="ekle()">Ekle</button>
+        <button onclick="sil()">Sil</button>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            .createElement("etiket_ismi") -> yeni bir html etiketi ekler
+
+            */
+
+            function ekle(){
+               
+                let etiket = document.createElement("p"); //p elementi oluşturuldu
+                etiket.innerHTML = "Furkan"; //içerik ver
+
+                document.body.appendChild(etiket); //ekranda göster
+
+            }
+
+            function sil(){
+                
+            }
+        </script>
+    </body>
+</html>

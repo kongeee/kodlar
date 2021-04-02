@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>onmouseupVEonmousedown JS</title>
+        <style type="text/css">
+            div{
+                border-style: solid;
+                
+                height: 100px;
+                width: 150px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div onmouseup="upFonk(this)" onmousedown="downFonk(this)"></div>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+                onmouseup -> tıktan elimizi çekince
+                onmousedown -> tık basılıyken
+            
+            */
+           
+            function upFonk(eleman){
+                eleman.innerHTML = "Tıklamayı bıraktın";
+            }
+            function downFonk(eleman){
+                eleman.innerHTML = "Tıklıyorsun";
+            }
+        </script>
+    </body>
+</html>
