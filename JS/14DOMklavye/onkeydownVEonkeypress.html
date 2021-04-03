@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>onkeydown ve onkeypress JS</title>
+    </head>
+    <body>
+       
+        
+        <input type="text" onkeyup="say(this)" onkeydown="renklendir(this)">
+        <p id="yazi"></p>
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            onkeydown ve onkeypress -> aynı işi yapar. her tuşa basıldığında verilen fonksiyonu çalıştırır (tuşa basılıyken çalışır)
+            onkeyup -> tuştan elimizi çekince gerçekleşir
+
+            */
+
+           var sayac = 0;
+           function say(eleman){
+               sayac++;
+               document.getElementById("yazi").innerHTML = sayac+" kez basıldı";
+               eleman.style.backgroundColor="white";
+           }
+
+           function renklendir(eleman){
+               
+                eleman.style.backgroundColor = "green";
+           }
+        </script>
+    </body>
+</html>
