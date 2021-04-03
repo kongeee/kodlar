@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>addEventListener JS</title>
+    </head>
+    <body>
+       
+        
+        <a href="https://www.google.com" id="buton1">prevent ile link iptal.</a>
+        <p id="paragraf"></p>
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            
+            .addEventListener() -> seçilen eleman için bir event bekler
+
+            preventDefault() -> html nesnesinin işini yapmasını engeller (linke tıklayınca gitmeme gibi)
+            
+
+            */
+           
+
+           document.getElementById("buton1").addEventListener("click", function(event){ //etkinliği burda belirliyoruz
+               document.getElementById("paragraf").innerHTML = "Yazı";
+               event.preventDefault();   //linkin çalışmasını iptal etti
+           });
+
+               
+        </script>
+    </body>
+</html>

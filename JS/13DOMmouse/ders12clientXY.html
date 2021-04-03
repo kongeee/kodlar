@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>clientX clientY JS</title>
+    </head>
+    <body>
+       
+        <div style="border-style: solid; width: 500px; height: 500px;" onclick="koordi(event)"></div>
+        <p id="paragraf"></p>
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            aşağıdaki tuşalar basılıyken tıklanmalı
+
+            clientX -> farenin x pozisyonu
+            clientY -> farenin Y pozisyonu
+
+            */
+
+           function koordi(event){ 
+               let x = event.clientX;
+               let y = event.clientY;
+
+               let paragraf = document.getElementById("paragraf");
+               paragraf.innerHTML = "X :"+x+"|Y :"+y;
+           }
+
+               
+        </script>
+    </body>
+</html>
+

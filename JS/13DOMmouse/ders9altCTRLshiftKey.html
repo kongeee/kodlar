@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>altKey ctrlKey shiftKey JS</title>
+    </head>
+    <body>
+       
+        
+        <button onclick="tusBasiliMi(event)">CTRL basılı mı?</button>
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            aşağıdaki tuşalar basılıyken tıklanmalı
+
+            altKey 
+            ctrlKey
+            shiftKey
+
+            */
+
+           function tusBasiliMi(event){ //parametre olarak event yaz(yoksa çalışmıyor)
+
+               if(event.ctrlKey){
+                   alert("CTRL tuşu basılıyken butona tıklandı");
+               }
+               else{
+                   alert("Basılı değil");
+               }
+           }
+        </script>
+    </body>
+</html>

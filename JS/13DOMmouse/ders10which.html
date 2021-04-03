@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>which buttons JS</title>
+    </head>
+    <body>
+       
+        <!--onclick olunca sağ tık çalışmıyor-->
+        <button onmousedown="hangiTus(event)">CTRL basılı mı?</button> 
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            aşağıdaki tuşalar basılıyken tıklanmalı
+
+            which -> sol tık =1, orta tık =2, sağ tık =3 değerini döner
+
+            buttons -> sol tık =1, sağ tık=2, orta tık= 4, geri tuşu=8, ileri tuşu =16
+
+            */
+
+           function hangiTus(event){ //parametre olarak event yaz(yoksa çalışmıyor)
+
+               switch(event.which){ //Mouse da hangi tuşa basıldığını algılarız
+                    case 1:
+                        alert("Sol tık");
+                        break;
+                    case 2:
+                        alert("Orta tık");
+                        break;
+                    case 3:
+                        alert("Sağ tık");
+                        break;
+                    
+               }
+           }
+        </script>
+    </body>
+</html>

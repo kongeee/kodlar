@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Örnek1 tıklanan butonu yok etme JS</title>
+    </head>
+    <body>
+       
+        
+        <button id="buton" onclick="yoket(event)">Yok etmek için tıkla</button>
+        <p id="yazi"></p>
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+           
+
+           function yoket(event){ 
+
+               let sayac = event.detail; // tıklanma bilgisini al
+               if(sayac == 1){ //eğer sayaca tıklanmışsa
+                    document.getElementById("buton").style.display = "none"; //html nesnesini yok eder
+                    document.getElementById("yazi").innerHTML = "Buton silindi";
+               }
+           }
+        </script>
+    </body>
+</html>
