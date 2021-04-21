@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>onblur JS</title>
+    </head>
+    <body>
+       
+        <input onblur="kontrol()" type="text" placeholder="Adınız"> <br>
+        <input id="soyad" onblur="soyadKontrol()" type="text" placeholder="Soyad">
+        <p id="yazi"></p>
+
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+
+        /*
+        onblur -> seçtiğimiz tıkladığımız html nesnesinden ayrılında çalışır(ad girme inputuna tıklayıp sonrasında bununduşunda bir yere tıkladığımızda veya tab ile geçtiğimizde onlur özelliği çalışır)
+        */
+            function kontrol(){
+                document.getElementById("yazi").innerHTML = "Input Alanından çıktın";
+            }
+           
+           /*soyad uzunluğu 3 karakterden kısaysa ekranda uyarı göster*/
+           function soyadKontrol(){
+               let sAd = document.getElementById("soyad").value;
+               if(sAd.length<3){
+                   document.getElementById("yazi").innerHTML = "Soyad 3 karakterden az olamaz";
+               }
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Alfabedeki her harfin 3 adım ileri kaydırılması ile elde edilir(ingiliz alfabesi baz alınmıştır). A yerine D, Y yerine B gibi

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>which key JS</title>
+    </head>
+    <body>
+       
+        
+        <input type="text" onkeydown="tus()">
+        <p id="yazi"></p>
+        
+
+        <!-- JS kodları -->
+
+        <script type="text/javascript">
+            /*
+            which -> basılan tuşun ascii karşılığı
+            key -> basılan tuşun adı
+
+            */
+
+           function tus(){
+
+            let isim = event.key;
+            let ascii = event.which;
+
+            document.getElementById("yazi").innerHTML = "Basılan tuş : "+isim+" | "+"ASCII : "+ascii;
+           }
+        </script>
+    </body>
+</html>
