@@ -1,0 +1,45 @@
+Spring Kurulum:
+spring initializr 'a git:
+-->Version seç(default olarak geliyor zaten)
+-->Grup bilgisini giriyoruz : (Örn: kodlamaio)
+-->Artifact (paket ismi) : (Örn northwind)
+-->Java versiyonu seç(11 ideal)
+
+->Add Dependencies kısmına gel ve şu paketleri indir:
+-->Spring Boot DevTools
+-->Lombok
+-->Spring Web
+-->Spring Data JPA(Java Persistance API)
+-->PostgreSQL Driver
+Generate et (Bunu yapınca indirecektir). İçindeki dosyayı projelerin olduğu yere at.
+
+Eclipse gir -> File -> Import -> Maven -> Existing Maven Projects -> Next -> Browse -> northwind projesini seç -> /pom.xml işaretli olsun -> Finish (inmesi uzun sürebilir)
+->Proje kodları	 	: src/main/java altında olacak
+->Kaynaklar     	: src/main/resources burada olacak
+->Unit tesler   	: src/test/java altında yazılacak
+->İndiriğimiz paketler 	: Maven Dependencies içindedir
+->Bağımlılıklar 	: Spring tarafında pom.xml içine eklenir
+!(Maven : paket yönetimi yaptığımız yer)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Lombok:
+Lombok yaz -> Download -> jar dosyasını indir
+-->Lombok sayesinde getter ve setter lar otomatik yazılacak 
+--> jar dosyasını aç ve Eclipse IDE 'nin kurulu olduğu yeri seç (default olarak öyle geliyor zaten)
+-->Eğer hata alırsan (class oluşturamama gibi vs):
+--->Eclipse'in olduğu klasöre gel. eclipse.ini dosyasını aç içine(en alta) şunları yaz:
+	--illegal-access=warn
+	--add-opens java.base/java.lang=ALL-UNNAMED
+(eğer JVM hatası alrısan en son satırı kaldır öyle dene)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Postgre Konfigürasyon:
+pgAdmin4 ile Postregre'ye gir -> Databases (sağ tıkla)-> Cretate -> Database -> DB ismi : Northwind olsun (biraz bekle kuruluyor)
+https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql adresine git
+script.sql -> Raw -> hepsini seç ve kopyala -> Postgre -> Northwind (sağ tık) ->Query Tool -> yapıştır ->yukarıdan execute et
+Northwind -> Schemas -> Tables diyerek eklenen tabloları görebilirsin. (Aslında şuan hazır bir veritabanını import ettik) (Tabloya sağ tık -> View/Edit Data -> All rows diyerek tüm kayıtlara ulaşılabilir)
+
+->Daha sonra : https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql adresine git
+->postgreconfig.txt dosyasını kopyala (buradaki password kısmına kendi postgre şifreni yazmayı unutma)
+->proje dosyana gel src/main/resources -> application.properties e yapıştır
