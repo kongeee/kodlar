@@ -1,0 +1,13 @@
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\bin\Debug\netcoreapp3.1\2_ClassMethods.exe
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\bin\Debug\netcoreapp3.1\2_ClassMethods.deps.json
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\bin\Debug\netcoreapp3.1\2_ClassMethods.runtimeconfig.json
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\bin\Debug\netcoreapp3.1\2_ClassMethods.runtimeconfig.dev.json
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\bin\Debug\netcoreapp3.1\2_ClassMethods.dll
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\bin\Debug\netcoreapp3.1\2_ClassMethods.pdb
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.csproj.AssemblyReference.cache
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.AssemblyInfoInputs.cache
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.AssemblyInfo.cs
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.dll
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.pdb
+C:\Users\furka\source\repos\2_ClassMethods\2_ClassMethods\obj\Debug\netcoreapp3.1\2_ClassMethods.genruntimeconfig.cache

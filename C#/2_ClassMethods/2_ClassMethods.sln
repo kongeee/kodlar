@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3_ClassMethods", "2_ClassMethods\3_ClassMethods.csproj", "{411FC5D1-6BE2-4B92-ADFF-3C4CAF99ABB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_DegerVeReferansTipler", "4_DegerVeReferansTipler\4_DegerVeReferansTipler.csproj", "{7D118265-AA48-417D-96C9-B0493878D404}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{411FC5D1-6BE2-4B92-ADFF-3C4CAF99ABB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411FC5D1-6BE2-4B92-ADFF-3C4CAF99ABB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411FC5D1-6BE2-4B92-ADFF-3C4CAF99ABB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411FC5D1-6BE2-4B92-ADFF-3C4CAF99ABB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D118265-AA48-417D-96C9-B0493878D404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D118265-AA48-417D-96C9-B0493878D404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D118265-AA48-417D-96C9-B0493878D404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D118265-AA48-417D-96C9-B0493878D404}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5CFF60D-03A8-4F4B-BA78-A146CCE16969}
+	EndGlobalSection
+EndGlobal

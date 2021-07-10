@@ -1,0 +1,13 @@
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\bin\Debug\netcoreapp3.1\4_DegerVeReferansTipler.exe
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\bin\Debug\netcoreapp3.1\4_DegerVeReferansTipler.deps.json
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\bin\Debug\netcoreapp3.1\4_DegerVeReferansTipler.runtimeconfig.json
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\bin\Debug\netcoreapp3.1\4_DegerVeReferansTipler.runtimeconfig.dev.json
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\bin\Debug\netcoreapp3.1\4_DegerVeReferansTipler.dll
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\bin\Debug\netcoreapp3.1\4_DegerVeReferansTipler.pdb
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.csproj.AssemblyReference.cache
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.AssemblyInfoInputs.cache
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.AssemblyInfo.cs
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.dll
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.pdb
+C:\Users\furka\source\repos\2_ClassMethods\4_DegerVeReferansTipler\obj\Debug\netcoreapp3.1\4_DegerVeReferansTipler.genruntimeconfig.cache
