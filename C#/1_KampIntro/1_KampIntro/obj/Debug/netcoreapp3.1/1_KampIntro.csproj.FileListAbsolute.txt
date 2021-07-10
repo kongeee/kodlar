@@ -1,0 +1,13 @@
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\bin\Debug\netcoreapp3.1\1_KampIntro.exe
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\bin\Debug\netcoreapp3.1\1_KampIntro.deps.json
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\bin\Debug\netcoreapp3.1\1_KampIntro.runtimeconfig.json
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\bin\Debug\netcoreapp3.1\1_KampIntro.runtimeconfig.dev.json
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\bin\Debug\netcoreapp3.1\1_KampIntro.dll
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\bin\Debug\netcoreapp3.1\1_KampIntro.pdb
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.csproj.AssemblyReference.cache
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.AssemblyInfoInputs.cache
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.AssemblyInfo.cs
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.dll
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.pdb
+C:\Users\furka\source\repos\1_KampIntro\1_KampIntro\obj\Debug\netcoreapp3.1\1_KampIntro.genruntimeconfig.cache

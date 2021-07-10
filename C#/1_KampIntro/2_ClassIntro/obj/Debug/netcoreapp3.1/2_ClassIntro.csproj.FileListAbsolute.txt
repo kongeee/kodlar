@@ -1,0 +1,13 @@
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\bin\Debug\netcoreapp3.1\2_ClassIntro.exe
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\bin\Debug\netcoreapp3.1\2_ClassIntro.deps.json
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\bin\Debug\netcoreapp3.1\2_ClassIntro.runtimeconfig.json
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\bin\Debug\netcoreapp3.1\2_ClassIntro.runtimeconfig.dev.json
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\bin\Debug\netcoreapp3.1\2_ClassIntro.dll
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\bin\Debug\netcoreapp3.1\2_ClassIntro.pdb
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.csproj.AssemblyReference.cache
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.AssemblyInfoInputs.cache
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.AssemblyInfo.cs
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.dll
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.pdb
+C:\Users\furka\source\repos\1_KampIntro\2_ClassIntro\obj\Debug\netcoreapp3.1\2_ClassIntro.genruntimeconfig.cache
