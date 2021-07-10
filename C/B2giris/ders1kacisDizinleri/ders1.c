@@ -7,7 +7,7 @@ int main(){
     printf("deneme1\adeneme2\n"); //TODO : \a ses veya uyarı üretir
 
     printf("deneme1\\deneme2\n"); //TODO : \\ ters slash yazdırmayı sağlar
-    printf("deneme1\"deneme2\n"); //TODO : \" tırnak işareti yazdırmayı sağlar
+    printf("deneme1\"deneme2\n"); //TODO : \" tırnak işareti yazdırmayı sağlar..
 
     return 0;
 }
