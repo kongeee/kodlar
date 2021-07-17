@@ -1,0 +1,9 @@
+C:\Users\furka\source\repos\FinalProject\Entitites\bin\Debug\netcoreapp3.1\Entitites.deps.json
+C:\Users\furka\source\repos\FinalProject\Entitites\bin\Debug\netcoreapp3.1\Entitites.dll
+C:\Users\furka\source\repos\FinalProject\Entitites\bin\Debug\netcoreapp3.1\Entitites.pdb
+C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.csproj.AssemblyReference.cache
+C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.AssemblyInfoInputs.cache
+C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.AssemblyInfo.cs
+C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.dll
+C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.pdb
