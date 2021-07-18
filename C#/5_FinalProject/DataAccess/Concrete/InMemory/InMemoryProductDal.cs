@@ -3,7 +3,11 @@ using Entitites.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
+
+
+//CALISMIYOR......
 
 namespace DataAccess.Concrete.InMemory {
     //Bu sinif Ramde bir DB varmis gibi davranir yani simule eder(Asil SQL EntityFramework te)
@@ -69,6 +73,14 @@ namespace DataAccess.Concrete.InMemory {
 
             //_prodcuts icinde category id si bizim gonderdigimize esit olan urunlerden bir lsite yap ve onu dondur
             return _products.Where(p => p.CategoryId == categoryId).ToList();
+        }
+
+        public List<Product> GetAll(Expression<Func<Product, bool>> filter = null) {
+            throw new NotImplementedException();
+        }
+
+        public Product Get(Expression<Func<Product, bool>> filter) {
+            throw new NotImplementedException();
         }
     }
 }

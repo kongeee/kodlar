@@ -5,15 +5,10 @@ using System.Text;
 
 namespace DataAccess.Abstract {
     //I->interface, Product->hangi tablo, Dal->Data Access Layer (hangi katman oldugu)
-    public interface IProductDal {
+    public interface IProductDal:IEntityRepository<Product> {
 
         
-        List<Product> GetAll();  //tum urunleri listeleme operasyonu
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(Product product);
-
-        List<Product> GetAllByCategoryId(int categoryId);
+       
 
 
     }
