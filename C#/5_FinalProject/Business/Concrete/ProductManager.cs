@@ -25,5 +25,13 @@ namespace Business.Concrete {
             //uygunsa
             return _productDal.GetAll();//data access katmanindaki GetAll metodunı cagirdik
         }
+
+        public List<Product> GetAllByCategoryId(int id) {
+            return _productDal.GetAll(p => p.CategoryId == id);//zaten Dal kısmında GetAll içine filtre yazma yetkisi vermiştik
+        }
+
+        public List<Product> GetByUnitPrice(decimal min, decimal max) {
+            return _productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max);
+        }
     }
 }
