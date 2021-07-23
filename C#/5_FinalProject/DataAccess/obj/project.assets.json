@@ -1468,9 +1468,25 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "Entitites/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entitites.dll": {}
         },
@@ -5654,6 +5670,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "Entitites/1.0.0": {
       "type": "project",
       "path": "../Entitites/Entitites.csproj",
@@ -5662,6 +5683,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Core >= 1.0.0",
       "Entitites >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.11"
     ]
@@ -5693,6 +5715,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj"
+            },
             "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj": {
               "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj"
             }
