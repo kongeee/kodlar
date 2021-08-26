@@ -21,10 +21,18 @@ namespace ConsoleUI {
         private static void ProductTest() {
             //productmanager newlerken hangi data accessi kullancagimizi da vermek zorudnayiz(injectiondan dolayi)
             IProductService productService = new ProductManager(new EfProductDal());
-            foreach (var product in productService.GetProductDetails()) {
 
-                Console.WriteLine(product.ProductName + " : " + product.CategoryName);
+            var result = productService.GetProductDetails();
+
+            if (result.Success) {
+                foreach (var product in result.Data) {
+
+                    Console.WriteLine(product.ProductName + " : " + product.CategoryName);
+                }
+            } else {
+                Console.WriteLine(result.Message);//buraya girerse ProductManagerden saati düzelt
             }
+
         }
     }
 }
