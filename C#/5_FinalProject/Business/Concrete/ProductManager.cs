@@ -35,7 +35,8 @@ namespace Business.Concrete {
             //iş kodları...
             //yetki var mi kontrol edilir..
             //diger kontroller yapilir..
-            if(DateTime.Now.Hour == 22) {//saat 10 ise getall yapılırken hata ver
+
+            if (DateTime.Now.Hour == 22) {//saat 10 ise getall yapılırken hata ver
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
 
