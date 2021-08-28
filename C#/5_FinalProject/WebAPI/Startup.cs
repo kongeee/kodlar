@@ -27,10 +27,16 @@ namespace WebAPI {
         public void ConfigureServices(IServiceCollection services) {
             services.AddControllers();
 
+
+            /*
+             * Bu kýsmý kaldýrýp bununla ayný iþi yapmasý için autofac kullandýk. Böylece projede baþka api gelse
+             * bile autofac business katmanýnda olduðu için sorun yaþamayýz
+             * 
             //birisi IProductService isterse arkaplanda bir ProductManager oluþtur ve onu ver
             services.AddSingleton<IProductService,ProductManager>(); //burayý biz ekledik
             //birisi IProductDal isterse arkaplanda bir EfProductDal oluþtur ve onu ver
             services.AddSingleton<IProductDal, EfProductDal>(); //burayý biz ekledik
+            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

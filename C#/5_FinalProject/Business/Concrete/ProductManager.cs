@@ -1,10 +1,14 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entitites.Concrete;
 using Entitites.DTOs;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,12 +23,11 @@ namespace Business.Concrete {
             _productDal = productDal;
         }
 
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product) {
 
-            //business codes
-            if (product.ProductName.Length < 2) {
-                return new ErrorResult(Messages.ProductNameInvalid);
-            }
+            //validiton : verilerin yapısal durumunun uyumuna doğrulama denir(kişinin adı min2 harf olmalı gibi)(AoP ile hallettik)
+            //iş kuralı : (kişinin notu 80 ise sınavdan geçsin)(burada yazdıklarımız)
 
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded);
@@ -36,7 +39,7 @@ namespace Business.Concrete {
             //yetki var mi kontrol edilir..
             //diger kontroller yapilir..
 
-            if (DateTime.Now.Hour == 22) {//saat 10 ise getall yapılırken hata ver
+            if (DateTime.Now.Hour == 22) {//saat 22 ise getall yapılırken hata ver
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
 
