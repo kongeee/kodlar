@@ -3,6 +3,7 @@ using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
@@ -11,6 +12,7 @@ using Entitites.DTOs;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Business.Concrete {
@@ -18,9 +20,12 @@ namespace Business.Concrete {
 
         //dependency injection yaptik cunku business ve data access birbirine baglanmali
         IProductDal _productDal;
+        ICategoryService _categoryService;
 
-        public ProductManager(IProductDal productDal) {
+        //ProductManager'a yalnızca productdal enjekte edilebilir ama diğer entitylerin servisleri kullanılabilir
+        public ProductManager(IProductDal productDal, ICategoryService categoryService) {
             _productDal = productDal;
+            _categoryService = categoryService;
         }
 
         [ValidationAspect(typeof(ProductValidator))]
@@ -29,8 +34,29 @@ namespace Business.Concrete {
             //validiton : verilerin yapısal durumunun uyumuna doğrulama denir(kişinin adı min2 harf olmalı gibi)(AoP ile hallettik)
             //iş kuralı : (kişinin notu 80 ise sınavdan geçsin)(burada yazdıklarımız)
 
+
+            IResult result = BusinessRules.Run(
+                CheckIfCategoryProductCountOfCategoryCorrect(product.CategoryId),
+                CheckIfProductNameExists(product.ProductName),
+                CheckIfCategoryLimitExceeded()
+                );
+
+            if (result != null) {
+                return result;
+            }
+            
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded);
+
+        }
+
+
+        [ValidationAspect(typeof(ProductValidator))]
+        public IResult Update(Product product) {
+
+            CheckIfCategoryProductCountOfCategoryCorrect(product.CategoryId);
+
+            throw new NotImplementedException();
         }
 
         public IDataResult<List<Product>> GetAll() {
@@ -66,5 +92,38 @@ namespace Business.Concrete {
             }
             return new SuccessDataResult<List<ProductDetailDTO>>(_productDal.GetProductDetails());
         }
+
+
+        //İŞ KURALLARI
+
+        //Bir kategoride en fazla 10 ürün olabilir
+        private IResult CheckIfCategoryProductCountOfCategoryCorrect(int categoryId) {
+            var categoryControlList = _productDal.GetAll(p => p.CategoryId == categoryId);
+            if (categoryControlList.Count > 10) {
+                return new ErrorResult(Messages.ErrorSmth);
+            }
+            return new SuccessResult();
+        }
+
+        //Aynı isimde ürün eklenemez
+        private IResult CheckIfProductNameExists(string productName) {
+            var result = _productDal.GetAll(p => p.ProductName == productName).Any();
+            if(result) {
+                return new ErrorResult(Messages.ProductNameAlreadyExists);
+            }
+            
+            return new SuccessResult();
+
+        }
+
+        private IResult CheckIfCategoryLimitExceeded() {
+            var result = _categoryService.GetAll().Data.Count;
+            if (result > 15) {
+                return new ErrorResult(Messages.CategoryLimitExceeded);
+            }
+            return new SuccessResult();
+        }
+
+        
     }
 }

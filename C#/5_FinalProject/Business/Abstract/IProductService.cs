@@ -13,6 +13,7 @@ namespace Business.Abstract {
         IDataResult<List<ProductDetailDTO>> GetProductDetails();//ürünleri kategori isimleri ile getirir(DTO sayesinde)
         IDataResult<Product> GetById(int productId);//Tek bir urun getir
         IResult Add(Product product);//Urun ekle
-        
+        IResult Update(Product product);//Urun guncelle
+
     }
 }
