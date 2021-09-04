@@ -2,6 +2,9 @@
 using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
@@ -31,6 +34,8 @@ namespace Business.Concrete {
 
         [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]    //yeni ürün eklendiğinde içinde get geçen metodlarla cache eklenmiş tüm verileri cache den çıkar
+
         public IResult Add(Product product) {
 
             //validiton : verilerin yapısal durumunun uyumuna doğrulama denir(kişinin adı min2 harf olmalı gibi)(AoP ile hallettik)
@@ -54,6 +59,7 @@ namespace Business.Concrete {
 
 
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]//ürün güncellendiğinde içinde get geçen metodlarla cache eklenmiş tüm verileri cache den çıkar
         public IResult Update(Product product) {
 
             CheckIfCategoryProductCountOfCategoryCorrect(product.CategoryId);
@@ -61,6 +67,9 @@ namespace Business.Concrete {
             throw new NotImplementedException();
         }
 
+
+        [PerformanceAspect(5)]//metodun çalışması 5 saniyeyi geçerse uyarı ver
+        [CacheAspect]
         public IDataResult<List<Product>> GetAll() {
 
             //iş kodları...
@@ -80,6 +89,7 @@ namespace Business.Concrete {
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id));//zaten Dal kısmında GetAll içine filtre yazma yetkisi vermiştik
         }
 
+        [CacheAspect]
         public IDataResult<Product> GetById(int productId) {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
         }
@@ -126,6 +136,11 @@ namespace Business.Concrete {
             return new SuccessResult();
         }
 
-        
+        [TransactionScopeAspect]
+        public IResult AddTransactionalTest(Product product) {
+            //iş kodları
+            //eğer bir hata olursa o ana kadar yapılan tüm işlemler geri alınır
+            throw new NotImplementedException();
+        }
     }
 }

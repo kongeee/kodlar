@@ -15,5 +15,7 @@ namespace Business.Abstract {
         IResult Add(Product product);//Urun ekle
         IResult Update(Product product);//Urun guncelle
 
+        IResult AddTransactionalTest(Product product);
+
     }
 }
