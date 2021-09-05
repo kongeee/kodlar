@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "raCcPwTvhruAFQKs9BK/Zxv2STJ1QpG20TFHV/pTo/GPThz58Rtm2J5XL5DuXSgNh/+Wk4qKFGlEShWLDsW30w==",
+  "dgSpecHash": "tKNtJSnzS2x7HClvXotLGdyiJK+ZBvwRimJw1zJAqV5Ohr/TAMdlQP54zr1x4jsb138Rn0O5bgOCdOCwINhRVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

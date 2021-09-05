@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {}
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj",
+        "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\obj\\",
+        "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",

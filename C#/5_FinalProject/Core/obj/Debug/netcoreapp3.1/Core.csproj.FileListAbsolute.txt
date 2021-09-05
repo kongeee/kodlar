@@ -7,3 +7,12 @@ C:\Users\furka\source\repos\FinalProject\Core\obj\Debug\netcoreapp3.1\Core.Assem
 C:\Users\furka\source\repos\FinalProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 C:\Users\furka\source\repos\FinalProject\Core\obj\Debug\netcoreapp3.1\Core.dll
 C:\Users\furka\source\repos\FinalProject\Core\obj\Debug\netcoreapp3.1\Core.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\bin\Debug\netcoreapp3.1\Core.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\bin\Debug\netcoreapp3.1\Core.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\obj\Debug\netcoreapp3.1\Core.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\Core\obj\Debug\netcoreapp3.1\Core.pdb

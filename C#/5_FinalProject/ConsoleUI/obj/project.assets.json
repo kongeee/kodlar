@@ -7676,11 +7676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+      "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\ConsoleUI\\ConsoleUI.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\ConsoleUI\\obj\\",
+      "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7697,14 +7697,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj"
+            "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj": {
+              "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj"
             },
-            "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj"
+            "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj": {
-              "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj"
+            "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj": {
+              "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj"
             }
           }
         }

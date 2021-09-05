@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product';
+import { ProductResponseModel } from 'src/app/models/productResponseModel';
+
+//api ye bağlanmak için
+import {HttpClient} from '@angular/common/http'
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-product',
@@ -7,17 +13,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  product1 = { productId: 1, productName: 'Bardak', categoryId: 1, unitPrice: 5 };
-  product2 = { productId: 2, productName: 'Masa', categoryId: 2, unitPrice: 8 };
-  product3 = { productId: 3, productName: 'Sandalye', categoryId: 2, unitPrice: 7 };
-  product4 = { productId: 4, productName: 'Kupa', categoryId: 1, unitPrice: 2 };
-  product5 = { productId: 5, productName: 'Tabak', categoryId: 3, unitPrice: 9 };
+  
 
+  products:Product[] = [];
+  dataLoaded = false; //product.componenets.html de dataLoaded false ise mavi dönen şeyi göster dedik
+  
 
-  products = [this.product1, this.product2, this.product3, this.product4, this.product5];
-  constructor() { }
+  constructor(private productService:ProductService) { }//angular bizim yerimize enjekte eder bunu
 
   ngOnInit(): void {
+    this.getProducts();
+  }
+
+  //ürünleri çek
+  getProducts(){
+    this.productService.getProducts().subscribe(response=>{
+      this.products = response.data;
+      this.dataLoaded = true;
+    });
+    
   }
 
 }

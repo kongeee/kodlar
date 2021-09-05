@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T+3YNTwZgQIoQGcMFpPGnlHoJZes/PscdheeIaItoiNldGOm581lJrSyz7ErNfjIGcmuMiHTUxC+71s5kEm2MA==",
+  "dgSpecHash": "kPQ9OUcsozchEFBM4yRabF9miEyGRpyPuPHOqpgQczGX3gMzgUUCM1o3xZ8NB+JERZc97X13LyaxePEITRztkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj",
+  "projectFilePath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

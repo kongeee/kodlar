@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1QITfSp3zLJJ4cQQmbQzLsIvnHH9bzP66mpAgveDZgY/JytA6Ze1pNYQBik1sHcLuwfkTJ6rUAqTOh5c0ElqLQ==",
+  "dgSpecHash": "DR2Z3gpB/m8Zv3YxEpQK7y8B/J9WTnAmne7pWcqNQlqWgzNINrHwsVyz5RuqnNLAFuWtSJnCmR0oY40PlPwQnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\furka\\source\\repos\\FinalProject\\ConsoleUI\\ConsoleUI.csproj",
+  "projectFilePath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

@@ -1,17 +1,18 @@
-<!-- Welcome to {{title}} <br>
-Hello {{user}} <br>
+<!-- Burası root html tüm componentleri buraya yazıyoruz -->
+<div class="container">
+  <app-navi></app-navi>
+  
+  <div class="row">
+    <div class="col-md-3">
+      <app-category></app-category>
+    </div>
+    <div class="col-md-9">
+      <app-product></app-product>
+    </div>
+  
+  </div>
 
-Ürün: {{product1.productName}} <br>
-<ul>
-  <li *ngFor="let product of products">{{product.productName}}</li>
-</ul> -->
-
-<app-navi></app-navi>
-<app-category></app-category>
-<app-product></app-product>
-
-
-
+</div>
 
 
 

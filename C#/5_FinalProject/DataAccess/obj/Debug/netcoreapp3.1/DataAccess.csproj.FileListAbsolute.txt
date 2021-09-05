@@ -12,3 +12,17 @@ C:\Users\furka\source\repos\FinalProject\DataAccess\obj\Debug\netcoreapp3.1\Data
 C:\Users\furka\source\repos\FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
 C:\Users\furka\source\repos\FinalProject\DataAccess\bin\Debug\netcoreapp3.1\Core.dll
 C:\Users\furka\source\repos\FinalProject\DataAccess\bin\Debug\netcoreapp3.1\Core.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\Core.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\Entitites.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\Core.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\bin\Debug\netcoreapp3.1\Entitites.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.AssemblyReference.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb

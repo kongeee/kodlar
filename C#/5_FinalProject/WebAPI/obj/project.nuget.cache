@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "be77vgT5KQnNdFSGRdIUPxOoNRfbzwvLhSf6tMJJQ9P3/tFf5zEQmKtLF3B4Y6D8S93gPXCwE8bxGa57SDmh8Q==",
+  "dgSpecHash": "29XzGsk9obElkYETGosf44AcJ2kUI6mgGb3RvrXO25AnI1PigSZo5DFl2mU1Q3gQapbMl9TLXSHYRnxMYBDBuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\furka\\source\\repos\\FinalProject\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

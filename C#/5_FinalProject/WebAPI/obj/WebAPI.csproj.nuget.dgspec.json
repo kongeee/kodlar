@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\WebAPI\\WebAPI.csproj": {}
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj": {
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj",
+        "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj",
+        "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\obj\\",
+        "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj",
+        "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\obj\\",
+        "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -183,14 +183,14 @@
         }
       }
     },
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj": {
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\obj\\",
+        "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -207,11 +207,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj"
               }
             }
           }
@@ -250,14 +250,14 @@
         }
       }
     },
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj": {
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj",
+        "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj",
         "projectName": "Entitites",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj",
+        "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\obj\\",
+        "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -274,8 +274,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj"
               }
             }
           }
@@ -308,14 +308,14 @@
         }
       }
     },
-    "C:\\Users\\furka\\source\\repos\\FinalProject\\WebAPI\\WebAPI.csproj": {
+    "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\FinalProject\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\WebAPI\\WebAPI.csproj",
+        "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\WebAPI\\obj\\",
+        "outputPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -332,17 +332,17 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Business\\Business.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Business\\Business.csproj"
               },
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Core\\Core.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\DataAccess\\DataAccess.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\FinalProject\\Entitites\\Entitites.csproj"
+              "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj": {
+                "projectPath": "D:\\Kodlar\\kodlar\\C#\\5_FinalProject\\Entitites\\Entitites.csproj"
               }
             }
           }

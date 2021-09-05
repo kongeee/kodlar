@@ -10,3 +10,15 @@ C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entit
 C:\Users\furka\source\repos\FinalProject\Entitites\bin\Debug\netcoreapp3.1\Core.dll
 C:\Users\furka\source\repos\FinalProject\Entitites\bin\Debug\netcoreapp3.1\Core.pdb
 C:\Users\furka\source\repos\FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.csproj.CopyComplete
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\bin\Debug\netcoreapp3.1\Entitites.deps.json
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\bin\Debug\netcoreapp3.1\Entitites.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\bin\Debug\netcoreapp3.1\Entitites.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\bin\Debug\netcoreapp3.1\Core.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\bin\Debug\netcoreapp3.1\Core.pdb
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.csproj.AssemblyReference.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.AssemblyInfoInputs.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.AssemblyInfo.cs
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.csproj.CoreCompileInputs.cache
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.csproj.CopyComplete
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.dll
+D:\Kodlar\kodlar\C#\5_FinalProject\Entitites\obj\Debug\netcoreapp3.1\Entitites.pdb
