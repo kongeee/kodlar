@@ -1,0 +1,9 @@
+<p *ngIf="dataLoaded==false">Error(Customer)</p>
+
+<table *ngIf="dataLoaded==true" class="table table-hover">
+    <tr *ngFor="let customer of customers">
+        <td>{{customer.customerId}}</td>
+        <td>{{customer.userId}}</td>
+        <td>{{customer.companyName}}</td>
+    </tr>
+</table>

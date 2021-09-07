@@ -1,0 +1,12 @@
+<p *ngIf="dataLoaded==false">Error(Rental)</p>
+
+<table *ngIf="dataLoaded==true" class="table table-hover">
+    <tr *ngFor="let rental of rentals">
+        <td>{{rental.rentalId}}</td>
+        <td>{{rental.brandName}}</td>
+        <td>{{rental.fullName}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.returnDate}}</td>
+    </tr>
+</table>
+

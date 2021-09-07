@@ -1,0 +1,8 @@
+<p *ngIf="dataLoaded==false">Error(Brand)</p>
+
+<table *ngIf="dataLoaded==true" class="table">
+    <tr *ngFor="let brand of brands">
+        <td>{{brand.brandId}}</td>
+        <td>{{brand.brandName}}</td>
+    </tr>
+</table>

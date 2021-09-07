@@ -1,0 +1,9 @@
+<p *ngIf="dataLoaded==false">Error(Color)</p>
+
+<table *ngIf="dataLoaded==true" class="table">
+    <tr *ngFor="let color of colors">
+        <td>{{color.colorId}}</td>
+        <td>{{color.colorName}}</td>
+    </tr>
+</table>
+
