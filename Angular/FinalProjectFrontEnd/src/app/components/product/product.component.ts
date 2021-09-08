@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/models/product';
-import { ProductResponseModel } from 'src/app/models/productResponseModel';
+
 
 //api ye bağlanmak için
-import {HttpClient} from '@angular/common/http'
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -18,20 +18,38 @@ export class ProductComponent implements OnInit {
   products:Product[] = [];
   dataLoaded = false; //product.componenets.html de dataLoaded false ise mavi dönen şeyi göster dedik
   
-
-  constructor(private productService:ProductService) { }//angular bizim yerimize enjekte eder bunu
+  //angular bizim yerimize enjekte eder product servisi ve activatedroute i
+  constructor(private productService:ProductService, private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.getProducts();
+    this.activatedRoute.params.subscribe(params=>{ //observable olduğu için subscribe olduk(params query stringdeki elemanları temsil eder)
+      if(params['categoryId']){//eğer parametrelerde categoryId diye bir şey varsa
+        this.getProductsByCategoryId(params['categoryId']);
+      }
+      else{//yoksa tüm ürünleri getir
+        this.getProducts();
+      }
+    })
   }
 
-  //ürünleri çek
+  //tüm ürünleri çek(servisteki bu metod observable olduğu için subscribe olmak gerekiyor)
   getProducts(){
-    this.productService.getProducts().subscribe(response=>{
+      this.productService.getProducts().subscribe(response=>{
       this.products = response.data;
       this.dataLoaded = true;
     });
     
   }
+
+
+  getProductsByCategoryId(categoryId:number){
+    this.productService.getProductsByCategoryId(categoryId).subscribe(response=>{
+    this.products = response.data;
+    this.dataLoaded = true;
+  });
+  
+}
+
+  
 
 }

@@ -1,0 +1,34 @@
+---GENEL KURULUMLAR---
+->Öncelikle node.js'i kur
+->Terminale 'npm install -g @angular/cli' yaz
+->Terminalden Angular projesini kurmak istediğin dizine gel ve 'ng new proje_adı' yaz
+->Bootstrap için 'npm install bootstrap@x.x.x' yaz (x.x.x versiyon bilgisidir sitede yazıyor, sitede başında v var onu kaldır öyle yaz)
+->Bootstrap'i aktif etmek için angular.json dosyasına gelip oradaki styles kısmına(30. satır) './node_component/bootstrap/dist/css/bootstrap.min.css' yaz
+
+
+---API'ye bağlanma---
+Angular tarafı:
+	services altındaki her bir servise import { HttpClient } from '@angular/common/http'; yaz
+	app.module.ts ye gel import { HttpClientModule } from '@angular/common/http'; yaz sonra imports kısmına gel en altına HttpClientModule yaz
+C# tarafı:
+	Startup.cs ye gel ConfigureServices kısmına services.AddCors(); yaz. Configure kısmına gel app.UseCors(builder=>builder.WithOrigins("http://localhost:4200").AllowAnyHeader()); yaz
+	
+
+---Component ve Servis---
+->Component Kurulumu : src/app altında components dizini oluştur. Terminalden o dizine gel ve 'ng g component component_ismi' yaz
+->Servis Kurlumu : src/app altında services dizini oluştur. Terminalden o dizine gel ve 'ng g service servis_ismi'
+
+
+---Jquery---
+npm install jquery yazarak yüklenir.
+angular.json dosyasına gel 34. satırda script var onun içine
+"./node_modules/jquery/dist/jquery.min.js", 
+"./node_modules/bootstrap/dist/js/bootstrap.min.js"
+yaz
+
+
+---Bölümler Hakkında---
+Component: Verileri yönettiğimiz ve gösterdiğimiz kısım
+Service: Entityler için c# taki gibi servisler sunduğumuz kısım (verileri çekme işi vs burda yapılır)
+Directive: c# ta metod başına [] ile yazıp özellik vermemiz gibi
+Model: Apideki veriye uygun şablon oluşturduğumuz kısım

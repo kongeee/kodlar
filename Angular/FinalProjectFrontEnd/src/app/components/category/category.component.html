@@ -1,7 +1,20 @@
 <ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
+    <li (click)="resetCurrentCategory()" routerLink=""  [class]="getAllCategoriesClass()">All Products</li>
+  
+    <!--Bir kategoriye tıklandığında o kategorideki elemanlar gelsin istiyoruz-->
+    <!--(click) ile her şeye tıklanma özelliği verebiliriz setCurrentCategory diye bir fonksiyon olacak tıklayınca o çalışsın dedik-->
+    <!--Önce ngFor çalıştığı için category bilgisini alabiliyoruz-->
+
+    <!--routerLink ile tıklanınca hangi route a gideceğini belirliyoruz-->
+    <li (click)="setCurrentCategory(category)"  
+    routerLink="/products/category/{{category.categoryId}}"   
+    *ngFor="let category of categories" 
+    [class]="getCurrentCategoryClass(category)"> <!--[] içine class yazınca componentten bir değer gelecek demek-->
+    {{category.categoryName}}
+    </li>
+    
   </ul>
+
+  <!--currentCategory set edilmişse(yani herhangi bir kategoriye tıklanmışsa)-->
+  <h5 *ngIf="currentCategory">{{currentCategory.categoryName}}</h5>
+  
