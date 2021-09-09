@@ -14,9 +14,10 @@ C# tarafı:
 	Startup.cs ye gel ConfigureServices kısmına services.AddCors(); yaz. Configure kısmına gel app.UseCors(builder=>builder.WithOrigins("http://localhost:4200").AllowAnyHeader()); yaz
 	
 
----Component ve Servis---
+---Component,Servis, Pipe Kurulumu---
 ->Component Kurulumu : src/app altında components dizini oluştur. Terminalden o dizine gel ve 'ng g component component_ismi' yaz
-->Servis Kurlumu : src/app altında services dizini oluştur. Terminalden o dizine gel ve 'ng g service servis_ismi'
+->Servis Kurulumu : src/app altında services dizini oluştur. Terminalden o dizine gel ve 'ng g service servis_ismi'
+->Pipe Kurulumu : src/app altında pipe dizini oluştur. Terminalden o dizine gel ve 'ng g pipe pipe_ismi'
 
 
 ---Jquery---
@@ -27,8 +28,26 @@ angular.json dosyasına gel 34. satırda script var onun içine
 yaz
 
 
+---Formlarla çalışırken---
+Öncelikle hangi componentte çalışıyorsak onun ts dosyasına gidip veriyi tutacak değişken oluşturuyoruz.
+Daha sonra inputun içine gelip [(ngModel)]="degisken_adı" yazıyoruz.(Bunun çalışması için aşağıdaki adımları yap)
+app.module.ts ye gelip import { FormsModule } from '@angular/forms' yazıp import kısmına gel ve FormsModule yaz
+
+
+---Toastr ve animation---
+npm install ngx-toastr
+npm install @angular/animations
+Daha sonra angular.json'a gel style kısmına "./node_modules/ngx-toastr/toastr.css" yaz
+app.module.ts ye gel 
+import { ToastrModule } from 'ngx-toastr' yaz sonrasında 
+imports kısmına gel ve ToastrModule.forRoot({positionClass:"toast-bottom-right"}) yaz
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+yine import kısmına gelip BrowserAnimationsModule yaz
+
+
 ---Bölümler Hakkında---
 Component: Verileri yönettiğimiz ve gösterdiğimiz kısım
 Service: Entityler için c# taki gibi servisler sunduğumuz kısım (verileri çekme işi vs burda yapılır)
 Directive: c# ta metod başına [] ile yazıp özellik vermemiz gibi
 Model: Apideki veriye uygun şablon oluşturduğumuz kısım
+Pipe: Datayı görsel olarak farklı biçimde göstermeyi sağlar.

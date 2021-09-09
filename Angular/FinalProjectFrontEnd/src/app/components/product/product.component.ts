@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Product } from 'src/app/models/product';
+import { CartService } from 'src/app/services/cart.service';
 
 
 //api ye bağlanmak için
@@ -17,9 +19,15 @@ export class ProductComponent implements OnInit {
 
   products:Product[] = [];
   dataLoaded = false; //product.componenets.html de dataLoaded false ise mavi dönen şeyi göster dedik
+  filterText:string;
   
   //angular bizim yerimize enjekte eder product servisi ve activatedroute i
-  constructor(private productService:ProductService, private activatedRoute:ActivatedRoute) { }
+  constructor(
+    private productService:ProductService, 
+    private activatedRoute:ActivatedRoute,
+    private toastrService:ToastrService, //toastr ile ekranın ekranda bildirim çıkartıyoruz
+    private cartService:CartService
+    ) { } 
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params=>{ //observable olduğu için subscribe olduk(params query stringdeki elemanları temsil eder)
@@ -42,6 +50,7 @@ export class ProductComponent implements OnInit {
   }
 
 
+
   getProductsByCategoryId(categoryId:number){
     this.productService.getProductsByCategoryId(categoryId).subscribe(response=>{
     this.products = response.data;
@@ -50,6 +59,9 @@ export class ProductComponent implements OnInit {
   
 }
 
-  
+  addToCart(product:Product){
+    this.toastrService.success("Sepete eklendi", product.productName);//ikinci paramtere üstte görünür
+    this.cartService.addToCart(product);
+  }
 
 }

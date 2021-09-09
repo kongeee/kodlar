@@ -2,6 +2,16 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 
+  <!--Arama butonu-->
+
+  <div class="mb-3">
+    <label for="filterText" class="form-label">Ürün Ara</label>
+    <input type="text" [(ngModel)]="filterText" class="form-control" placeholder="Arama ifadesi" id="filterText">
+  </div>
+  <div *ngIf="filterText" class="alert alert-primary">
+      {{filterText}} aradınız
+  </div>
+
 <table *ngIf="dataLoaded==true" class="table">
     <thead>
         <tr>
@@ -9,15 +19,23 @@
             <th>İsim</th>
             <th>Kategori</th>
             <th>Fiyat</th>
+            <th>KDV'li Fiyat</th>
             <th>Stok Adedi</th>
+            <th></th>
         </tr>
     </thead>
 
-    <tr *ngFor="let product of products">
-        <td>{{product.productId}}</td>
-        <td>{{product.productName}}</td>
-        <td>{{product.categoryId}}</td>
-        <td>{{product.unitPrice}}</td>     
-        <td>{{product.unitsInStock}}</td>
-    </tr>
+    <tbody>
+        <tr *ngFor="let product of products |filterPipe:filterText">
+            <td>{{product.productId}}</td>
+            <td>{{product.productName |uppercase}}</td> <!--Burada pipe yaptık uppercase pipe ı built-in bir pipetır(yani sistemin kendisinde var)-->
+            <td>{{product.categoryId}}</td>
+            <td>{{product.unitPrice |currency}}</td>     
+            <td>{{product.unitPrice |vatAdded:18 |currency }}</td>   <!--pipe a parametre vermek için : kullandık-->
+            <td>{{product.unitsInStock}}</td>
+            <td><button (click)="addToCart(product)" type="button" class="btn btn-success">Sepete Ekle</button></td>
+        </tr>
+    </tbody>
+
+    
 </table>
