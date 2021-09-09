@@ -1,0 +1,7 @@
+<p *ngIf="dataLoaded==false">Error(Image)</p>
+<div *ngIf="dataLoaded==true">
+    <p  *ngFor="let image of carImages">{{image.imagePath}}</p>
+    <img *ngFor="let image of carImages" src="unsafe:C:\Users\furka\Desktop\C#Odev\ReCapProject\WebAPI\Images\{{image.imagePath}}" alt="">
+    
+
+</div>

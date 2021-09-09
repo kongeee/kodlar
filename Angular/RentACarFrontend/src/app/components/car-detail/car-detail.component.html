@@ -1,0 +1,20 @@
+<p *ngIf="dataLoaded==false">Error(carDetail)</p>
+
+<table *ngIf="dataLoaded==true" class="table">
+
+    <tr *ngFor="let carDetail of carDetails">
+        <td routerLink="/cars/car/{{carDetail.carId}}" 
+        (click)="deneme(carDetail)"
+        >{{carDetail.carName}}{{carDetail.carId}}</td>
+        <td>{{carDetail.brandName}}</td>
+        <td>{{carDetail.colorName}}</td>
+        <td>{{carDetail.dailyPrice}}</td>
+        
+    </tr>
+    <tr *ngFor="let carImage of carImages">
+        <td>{{carImage.imagePath}}</td>
+        <img src="C:\Users\furka\Desktop\C#Odev\ReCapProject\WebAPI\Images\{{carImage.imagePath}}" alt="">
+    </tr>
+
+</table>
+

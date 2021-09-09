@@ -1,12 +1,12 @@
-<p *ngIf="dataLoaded==false">Error(carDetail)</p>
+<p *ngIf="dataLoaded==false">Error(Car)</p>
 
 <table *ngIf="dataLoaded==true" class="table">
 
-    <tr *ngFor="let carDetail of carDetails">
-        <td>{{carDetail.carName}}</td>
-        <td>{{carDetail.brandName}}</td>
-        <td>{{carDetail.colorName}}</td>
-        <td>{{carDetail.dailyPrice}}</td>
+    <tr *ngFor="let car of cars">
+        <td routerLink="/cars/car/{{car.carId}}" (click)="setCurrentCar(car)">{{car.carName}}</td>
+        <td>{{car.modelYear}}</td>
+        <td>{{car.dailyPrice}}</td>
+        <td>{{car.description}}</td>
     </tr>
 
 </table>
