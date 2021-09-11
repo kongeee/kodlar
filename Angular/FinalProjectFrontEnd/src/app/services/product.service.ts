@@ -30,6 +30,8 @@ export class ProductService {
     return this.httpClient.get<ListResponseModel<Product>>(newPath);
   }
 
+
+  //ekleme yaparken yetkimiz olmalı bunun için de token bilgisinin server(api) a yollamamız gerekiyor bu bilgiyi interceptors bölümünde yaptıklarımızla yolluyoruz
   add(product:Product):Observable<ResponseModel>{//success ve message bilgisi dönsün
     return this.httpClient.post<ResponseModel>(this.apiUrl+"products/add", product);//1. parametre adres, ikincisi göndereceğimiz nesne
 

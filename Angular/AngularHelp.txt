@@ -14,11 +14,12 @@ C# tarafı:
 	Startup.cs ye gel ConfigureServices kısmına services.AddCors(); yaz. Configure kısmına gel app.UseCors(builder=>builder.WithOrigins("http://localhost:4200").AllowAnyHeader()); yaz
 	
 
----Component,Servis, Pipe Kurulumu---
+---Component, Servis, Pipe, Interceptor, Guard Kurulumu---
 ->Component Kurulumu : src/app altında components dizini oluştur. Terminalden o dizine gel ve 'ng g component component_ismi' yaz
 ->Servis Kurulumu : src/app altında services dizini oluştur. Terminalden o dizine gel ve 'ng g service servis_ismi'
-->Pipe Kurulumu : src/app altında pipe dizini oluştur. Terminalden o dizine gel ve 'ng g pipe pipe_ismi'
-
+->Pipe Kurulumu : src/app altında pipes dizini oluştur. Terminalden o dizine gel ve 'ng g pipe pipe_ismi'
+->Interceptor Kurulumu : src/app altında interceptors dizini oluştur. Terminalden o dizine git ve 'ng g interceptor interceptor_ismi' yaz
+->Guard Kurulumu: src/app altında guards dizini oluştur. Terminalden o dizine git ve 'ng g guard guard_ismi' yaz
 
 ---Jquery---
 npm install jquery yazarak yüklenir.
@@ -51,6 +52,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms' importunu yaz
 imports kısmına da  FormsModule ve ReactiveFormsModule yaz
 
 
+---Interceptor---
+app.module.ts dosyasına git providers kısmına gel ve köşeli parantez içine
+{
+	provide:HTTP_INTERCEPTORS,
+	useClass:AuthInterceptor,
+	multi:true
+}
+yaz
+
+
 
 
 ---Bölümler Hakkında---
@@ -59,6 +70,8 @@ Service: Entityler için c# taki gibi servisler sunduğumuz kısım (verileri ç
 Directive: c# ta metod başına [] ile yazıp özellik vermemiz gibi
 Model: Apideki veriye uygun şablon oluşturduğumuz kısım
 Pipe: Datayı görsel olarak farklı biçimde göstermeyi sağlar.
+Interceptor: .net tarafında [] içine yazdığımız aspectlere benzer işler yaparlar.
+Guard: yetkisi olmayan veya giriş yapmayan birinin istenmeyen sayfalara gidişini engeller.(Örn giriş yapmamış birisi ürün eklemek isterse onu logine yönlendirir)
 
 app-routing.module.ts : routeların önce buraya yaz
 app.module.ts : Dışardan elimizle import ettiimiz modülleri burada belirtiyoruz
