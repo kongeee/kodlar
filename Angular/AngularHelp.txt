@@ -62,6 +62,10 @@ app.module.ts dosyasına git providers kısmına gel ve köşeli parantez içine
 yaz
 
 
+---Guard---
+app-routine.module.ts ye gel products/add kısmına gelip , ile ayırıp   canActivate:[LoginGuard] yaz
+
+
 
 
 ---Bölümler Hakkında---
