@@ -1,6 +1,7 @@
 <p *ngIf="dataLoaded==false">Error(Color)</p>
 
 <table *ngIf="dataLoaded==true" class="table">
+    <tr (click)="resetCurrentColor()" [class]="getAllColorsClass()" routerLink="">Tüm renkleri göster</tr>
     <tr (click)="setCurrentColor(color)"
     [class]="getColorClass(color)"
     routerLink="/cars/color/{{color.colorId}}" 

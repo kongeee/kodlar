@@ -1,13 +1,36 @@
 <p *ngIf="dataLoaded==false">Error(Car)</p>
 
-<table *ngIf="dataLoaded==true" class="table">
+<div class="mb-3">
+    <label for="filterText" class="form-label">Araç Ara</label>
+    
+    <input type="text" [(ngModel)]="filterText" class="form-control" placeholder="Arama ifadesi" id="filterText">
+  </div>
+  <div *ngIf="filterText" class="alert alert-primary">
+      {{filterText}} aradınız
+  </div>
 
-    <tr *ngFor="let car of cars">
-        <td routerLink="/cars/car/{{car.carId}}" (click)="setCurrentCar(car)">{{car.carName}}</td>
-        <td>{{car.modelYear}}</td>
-        <td>{{car.dailyPrice}}</td>
-        <td>{{car.description}}</td>
-    </tr>
+
+<table *ngIf="dataLoaded==true" class="table">
+    <thead>
+        <tr>
+            <th>Araba ismi</th>
+            <th>Model</th>
+            <th>Günlük fiyat</th>
+            <th>Açıklama</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let car of cars |carPipe:filterText">
+            <td routerLink="/cars/car/{{car.carId}}" (click)="setCurrentCar(car)" style="cursor:pointer;">{{car.carName}}</td>
+            <td>{{car.modelYear}}</td>
+            <td>{{car.dailyPrice |currency}}</td>
+            <td>{{car.description}}</td>
+        </tr>
+
+    </tbody>
 
 </table>
+
+
 

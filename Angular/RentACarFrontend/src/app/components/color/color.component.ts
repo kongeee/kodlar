@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Color } from 'src/app/models/color';
+
 import { ColorService } from 'src/app/services/color.service';
+
 
 @Component({
   selector: 'app-color',
@@ -12,7 +14,7 @@ export class ColorComponent implements OnInit {
   colors:Color[] = [];
   currentColor:Color;
   dataLoaded = false;
-
+  colorForReset:Color;
 
   constructor(private colorService:ColorService) { }
 
@@ -29,6 +31,7 @@ export class ColorComponent implements OnInit {
 
   setCurrentColor(color:Color){
     this.currentColor = color;
+    
     console.log(color.colorName);
   }
 
@@ -39,4 +42,14 @@ export class ColorComponent implements OnInit {
     return "list-group-item"
   }
 
+  getAllColorsClass(){
+    if(!this.currentColor){
+      return "list-group-item active";
+    }
+    return "list-group-item";
+  }
+
+  resetCurrentColor(){
+    this.currentColor=this.colorForReset;
+  }
 }

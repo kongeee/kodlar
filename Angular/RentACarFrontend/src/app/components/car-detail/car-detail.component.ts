@@ -4,7 +4,7 @@ import { CarDetail } from 'src/app/models/carDetail';
 import { CarImage } from 'src/app/models/carimage';
 import { CarDetailService } from 'src/app/services/car-detail.service';
 import { CarimageService } from 'src/app/services/carimage.service';
-import {DomSanitizer} from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-car-detail',
@@ -13,14 +13,16 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class CarDetailComponent implements OnInit {
 
-  carDetails:CarDetail[] = [];
+  carDetail:CarDetail;
+  
   carImages:CarImage[];
   dataLoaded = false;
+  
 
   constructor(private carDetailService:CarDetailService,
      private activatedRoute:ActivatedRoute,
       private carImageService:CarimageService,
-      private sanitizer:DomSanitizer) { }
+      ) { }
 
   ngOnInit(): void {
     
@@ -30,7 +32,7 @@ export class CarDetailComponent implements OnInit {
         this.getCarImagesById(params['carId']);
 
       }else{
-        this.getCarDetails();
+      
       }
 
     })
@@ -39,23 +41,19 @@ export class CarDetailComponent implements OnInit {
     
   }
 
-  getCarDetails(){
-      this.carDetailService.getCarDetails().subscribe(response=>{
-      this.carDetails = response.data;
-      this.dataLoaded = true;
-    })
-  }
+
 
   getCarDetailsById(carId:number){
     this.carDetailService.getCarDetailsById(carId).subscribe(response=>{
-      this.carDetails = response.data;
+      this.carDetail = response.data;
       this.dataLoaded = true;
-      let sanitizedUrl = this.sanitizer.bypassSecurityTrustUrl('C:\Users\furka\Desktop\C#Odev\ReCapProject\WebAPI\Images/');
+     
     })
 
   }
   getCarImagesById(carId:number){
     this.carImageService.getCarImages(carId).subscribe(response=>{
+      
       this.carImages = response.data;
       this.dataLoaded=true;
       

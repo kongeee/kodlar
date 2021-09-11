@@ -2,10 +2,9 @@
 
 <table *ngIf="dataLoaded==true" class="table">
 
-    <tr *ngFor="let carDetail of carDetails">
+    <tr>
         <td routerLink="/cars/car/{{carDetail.carId}}" 
-        (click)="deneme(carDetail)"
-        >{{carDetail.carName}}{{carDetail.carId}}</td>
+        (click)="deneme(carDetail)">{{carDetail.carName}}</td>
         <td>{{carDetail.brandName}}</td>
         <td>{{carDetail.colorName}}</td>
         <td>{{carDetail.dailyPrice}}</td>
@@ -17,4 +16,7 @@
     </tr>
 
 </table>
+
+
+
 
