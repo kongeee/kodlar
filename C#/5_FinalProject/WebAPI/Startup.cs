@@ -74,6 +74,8 @@ namespace WebAPI {
                 app.UseDeveloperExceptionPage();
             }
 
+            app.ConfigureCustomExceptionMiddleware();//hatalar için (Core>Extensions kýsmýna bak) (Tüm sistemi try-catch e aldýk)
+
             app.UseCors(builder=>builder.WithOrigins("http://localhost:4200").AllowAnyHeader()); //front-end için
 
             app.UseHttpsRedirection();

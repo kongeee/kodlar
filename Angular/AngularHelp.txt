@@ -45,9 +45,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 yine import kısmına gelip BrowserAnimationsModule yaz
 
 
+---Form için---
+app.component.ts ye gel
+import { FormsModule, ReactiveFormsModule } from '@angular/forms' importunu yaz
+imports kısmına da  FormsModule ve ReactiveFormsModule yaz
+
+
+
+
 ---Bölümler Hakkında---
 Component: Verileri yönettiğimiz ve gösterdiğimiz kısım
 Service: Entityler için c# taki gibi servisler sunduğumuz kısım (verileri çekme işi vs burda yapılır)
 Directive: c# ta metod başına [] ile yazıp özellik vermemiz gibi
 Model: Apideki veriye uygun şablon oluşturduğumuz kısım
 Pipe: Datayı görsel olarak farklı biçimde göstermeyi sağlar.
+
+app-routing.module.ts : routeların önce buraya yaz
+app.module.ts : Dışardan elimizle import ettiimiz modülleri burada belirtiyoruz

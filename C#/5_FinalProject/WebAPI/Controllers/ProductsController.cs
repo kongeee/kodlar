@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-//Verilerin dış dünyaya açıldıpı yer
+//Verilerin dış dünyaya açıldığı yer
 
 namespace WebAPI.Controllers {
     [Route("api/[controller]")]
